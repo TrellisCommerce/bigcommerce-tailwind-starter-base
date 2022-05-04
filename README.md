@@ -17,6 +17,21 @@ The starter theme includes an integration of:
 
 ## Steps to Start Using this Starter Theme
 
+1. Fork this repository, navigate to the directory, run `npm install`
+
+2. Create an [API token](https://developer.bigcommerce.com/stencil-docs/ZG9jOjIyMDcwMQ-live-previewing-a-theme) with theme publishing permissions
+
+3. To connect to your theme, run `stencil init --url https://XXX.mybigcommerce.com --token XXX`
+
+4. To pull down the configuration from the active theme on your live store and updates your local configuration, run `stencil pull`
+
+5. Anytime you add a TailwindCSS class (remember to prefix it with twcss-), run the CLI tool to scan your template files for classes and build your CSS to assets/app.css:
+   `npx tailwindcss -i ./assets/scss/app-tailwind.scss -o ./assets/scss/app.scss --watch`
+
+- Run this command in a separate terminal so it will continue to run while you are developing.
+
+5. To bundle your theme into a zip file and then push the theme to your BigCommerce store, run `stencil push`
+
 ## Static assets
 
 Some static assets in the Stencil theme are handled with Grunt if required. This
