@@ -1,0 +1,22 @@
+{{#if product_results.products}}
+    {{> components/common/modal/modal-close-btn additional_attr='data-drop-down-close'}}
+    <ul class="productGrid" {{#if settings.data_tag_enabled}} data-list-name="Quick Search Results" {{/if}}>
+        {{#each product_results.products}}
+        <li class="product">
+                {{> components/products/card
+                        settings=../settings
+                        alternate=true
+                        show_compare=../show_compare
+                        theme_settings=../theme_settings
+                        customer=../customer
+                        event="list"
+                        position=(add @index 1)
+                }}
+        </li>
+        {{/each}}
+    </ul>
+{{else}}
+    <p class="quickSearchMessage">
+        {{{lang 'search.results.quick_count' count=pagination.product_results.total search_query=(sanitize forms.search.query) }}}
+    </p>
+{{/if}}

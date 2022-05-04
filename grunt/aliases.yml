@@ -1,0 +1,11 @@
+---
+check:js:
+    - eslint
+    - run:jest
+
+check:css:
+    - stylelint
+
+check:
+    - check:js
+    - check:css
