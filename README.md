@@ -26,7 +26,7 @@ The starter theme includes an integration of:
 4. To pull down the configuration from the active theme on your live store and updates your local configuration, run `stencil pull`
 
 5. Anytime you add a TailwindCSS class (remember to prefix it with twcss-), run the CLI tool to scan your template files for classes and build your CSS to assets/app.css:
-   `npx tailwindcss -i ./assets/scss/app-tailwind.scss -o ./assets/scss/app.scss --watch`
+   `npx tailwindcss -i ./assets/scss/app-tailwind.css -o ./assets/scss/app.scss --watch`
 
 - Run this command in a separate terminal so it will continue to run while you are developing.
 
