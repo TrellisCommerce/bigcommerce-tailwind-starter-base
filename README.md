@@ -25,12 +25,21 @@ The starter theme includes an integration of:
 
 4. To pull down the configuration from the active theme on your live store and updates your local configuration, run `stencil pull`
 
-5. Anytime you add a TailwindCSS class (remember to prefix it with twcss-), run the CLI tool to scan your template files for classes and build your CSS to assets/app.css:
+5. To bundle your theme into a zip file and then push the theme to your BigCommerce store, run `stencil push`
+
+## Common local development commands
+1. Before beginning any work, it is good practice to pull down the latest changes from the BigCommerce Cornerstone theme: 
+```
+git fetch upstream
+git pull upstream main
+```
+
+2. Add upstream link if you get the error `fatal: 'upstream' does not appear to be a git repository` run: `git remote add upstream git remote add upstream https://github.com/bigcommerce/cornerstone.git`
+
+3. Anytime you add a TailwindCSS class (remember to prefix it with twcss-), run the CLI tool to scan your template files for classes and build your CSS to assets/app.css:
    `npx tailwindcss -i ./assets/scss/app-tailwind.css -o ./assets/scss/app.scss --watch`
 
 - Run this command in a separate terminal so it will continue to run while you are developing.
-
-5. To bundle your theme into a zip file and then push the theme to your BigCommerce store, run `stencil push`
 
 ## Static assets
 
