@@ -45,8 +45,9 @@ export default (e, carouselObj, context) => {
   const { slidesQuantity } = $slider.data('state');
   $playPauseButton.css('display', slidesQuantity > 1 ? 'block' : 'none');
 
-  if (e.type === 'init')
+  if (e.type === 'init') {
     updateButtonLabelsWithContext = updateButtonLabels(context);
+  }
 
   if (e.type === 'breakpoint') {
     updateButtonLabelsWithContext($playPauseButton, PLAY_ACTION);

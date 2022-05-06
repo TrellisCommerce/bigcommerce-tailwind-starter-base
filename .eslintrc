@@ -23,7 +23,13 @@
     "import/no-named-as-default-member": 0,
     "import/prefer-default-export": "off",
     "function-paren-newline": "off",
-    "curly": "multi-line"
+    "curly": ["error", "multi-line"],
+    "object-curly-newline": [
+      "error",
+      {
+        "ImportDeclaration": "off"
+      }
+    ]
   },
   "globals": {
     "$": true,
