@@ -6,7 +6,7 @@ The following is a set of guidelines for contributing to Stencil. These are just
 
 By contributing to Stencil, you agree that your contributions will be licensed under its MIT license.
 
-#### Table of Contents
+## Table of Contents
 
 [Stencil Documentation](https://stencil.bigcommerce.com/docs)
 
