@@ -51,9 +51,8 @@ export default ({ delegateTarget }, carouselObj) => {
     } else if (activeSlideImgNode.naturalHeight > 1) {
       setAspectRatioClass(activeSlideImgNode, $activeSlideAndClones);
     }
-  } else {
+  } else
     $activeSlideImg.on('load', () =>
       setAspectRatioClass(activeSlideImgNode, $activeSlideAndClones),
     );
-  }
 };
