@@ -1,5 +1,5 @@
-import foundation from './foundation';
 import * as focusTrap from 'focus-trap';
+import foundation from './foundation';
 
 const bodyActiveClass = 'has-activeModal';
 const loadingOverlayClass = 'loadingOverlay';

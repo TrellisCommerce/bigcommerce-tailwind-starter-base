@@ -1,10 +1,10 @@
+import { api } from '@bigcommerce/stencil-utils';
 import PageManager from './page-manager';
 import nod from './common/nod';
 import checkIsGiftCertValid from './common/gift-certificate-validator';
 import formModel from './common/models/forms';
 import { createTranslationDictionary } from './common/utils/translations-utils';
 import { announceInputErrorMessage } from './common/utils/form-utils';
-import { api } from '@bigcommerce/stencil-utils';
 import { defaultModal } from './global/modal';
 
 export default class GiftCertificate extends PageManager {

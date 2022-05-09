@@ -59,6 +59,6 @@ $widthMap: (
     @return map-get($widthMap, $key);
   }
 
-  @warn "Unknown width `#{$key}` in width function.";
+  @warn 'Unknown width `#{$key}` in width function.';
   @return null;
 }

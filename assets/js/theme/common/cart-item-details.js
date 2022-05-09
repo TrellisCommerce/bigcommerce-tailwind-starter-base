@@ -1,8 +1,8 @@
 import utils from '@bigcommerce/stencil-utils';
+import { isEmpty } from 'lodash';
 import ProductDetailsBase, {
   optionChangeDecorator,
 } from './product-details-base';
-import { isEmpty } from 'lodash';
 import { isBrowserIE, convertIntoArray } from './utils/ie-helpers';
 
 export default class CartItemDetails extends ProductDetailsBase {

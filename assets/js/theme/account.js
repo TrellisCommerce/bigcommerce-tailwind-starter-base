@@ -1,5 +1,5 @@
-import PageManager from './page-manager';
 import _ from 'lodash';
+import PageManager from './page-manager';
 import nod from './common/nod';
 import Wishlist from './wishlist';
 import validation from './common/form-validation';

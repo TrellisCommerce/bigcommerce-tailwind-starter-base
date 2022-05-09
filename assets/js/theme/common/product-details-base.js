@@ -1,6 +1,6 @@
+import { isObject, isNumber } from 'lodash';
 import Wishlist from '../wishlist';
 import { initRadioOptions } from './aria';
-import { isObject, isNumber } from 'lodash';
 
 const optionsTypesMap = {
   INPUT_FILE: 'input-file',

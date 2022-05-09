@@ -328,10 +328,8 @@
   &.is-open {
     display: block;
   }
-
-  .navPages-list:not(.navPages-list-depth-max)
-    .navPages-action.has-subMenu
-    + & {
+  // prettier-ignore
+  .navPages-list:not(.navPages-list-depth-max) .navPages-action.has-subMenu + & {
     .navPage-subMenu-list {
       margin-right: 0;
 

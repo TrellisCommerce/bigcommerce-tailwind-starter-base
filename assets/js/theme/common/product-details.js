@@ -1,4 +1,5 @@
 import utils from '@bigcommerce/stencil-utils';
+import { isEmpty, isPlainObject } from 'lodash';
 import ProductDetailsBase, {
   optionChangeDecorator,
 } from './product-details-base';
@@ -6,10 +7,9 @@ import 'foundation-sites/js/foundation/foundation';
 import 'foundation-sites/js/foundation/foundation.reveal';
 import ImageGallery from '../product/image-gallery';
 import modalFactory, { alertModal, showAlertModal } from '../global/modal';
-import { isEmpty, isPlainObject } from 'lodash';
-import nod from '../common/nod';
-import { announceInputErrorMessage } from '../common/utils/form-utils';
-import forms from '../common/models/forms';
+import nod from './nod';
+import { announceInputErrorMessage } from './utils/form-utils';
+import forms from './models/forms';
 import { normalizeFormData } from './utils/api';
 import { isBrowserIE, convertIntoArray } from './utils/ie-helpers';
 import bannerUtils from './utils/banner-utils';

@@ -1,5 +1,5 @@
-import { showAlertModal } from './modal';
 import utils from '@bigcommerce/stencil-utils';
+import { showAlertModal } from './modal';
 
 let currencySelectorCalled = false;
 

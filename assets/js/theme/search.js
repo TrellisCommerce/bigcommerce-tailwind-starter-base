@@ -1,10 +1,10 @@
 import { hooks } from '@bigcommerce/stencil-utils';
+import Url from 'url';
 import CatalogPage from './catalog';
 import FacetedSearch from './common/faceted-search';
 import { announceInputErrorMessage } from './common/utils/form-utils';
 import compareProducts from './global/compare-products';
 import urlUtils from './common/utils/url-utils';
-import Url from 'url';
 import collapsibleFactory from './common/collapsible';
 import 'jstree';
 import nod from './common/nod';
