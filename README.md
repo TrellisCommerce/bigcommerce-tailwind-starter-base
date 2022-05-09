@@ -34,7 +34,7 @@ git fetch upstream
 git pull upstream main
 ```
 
-2. Add upstream link if you get the error `fatal: 'upstream' does not appear to be a git repository` run: `git remote add upstream git remote add upstream https://github.com/bigcommerce/cornerstone.git` or `git remote add upstream git remote add upstream https://github.com/TrellisCommerce/bigcommerce-cornerstone-tailwind-starter-base.git` depending on which repository you want to pull updates from
+2. Add upstream link if you get the error `fatal: 'upstream' does not appear to be a git repository` run: `git remote add upstream https://github.com/bigcommerce/cornerstone.git` or `git remote add upstream https://github.com/TrellisCommerce/bigcommerce-cornerstone-tailwind-starter-base.git` depending on which repository you want to pull updates from
 
 3. Anytime you add a TailwindCSS class (remember to prefix it with twcss-), run the CLI tool to scan your template files for classes and build your CSS to assets/app.css:
    `npx tailwindcss -i ./assets/scss/app-tailwind.css -o ./assets/scss/app.scss --watch`
