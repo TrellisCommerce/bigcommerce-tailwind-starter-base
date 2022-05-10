@@ -7,6 +7,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## Draft
 
+- Remove adminBar translations from da/no lang files [#2209](https://github.com/bigcommerce/cornerstone/issues/2209)
 - Translation updates April 2022 [#2204](https://github.com/bigcommerce/cornerstone/issues/2204)
 - Product image not shown in Pinterest preview if not signed in.[#2203](https://github.com/bigcommerce/cornerstone/issues/2203)
 - Remove nanobar (loading progress bar). [#2192](https://github.com/bigcommerce/cornerstone/issues/2192)
