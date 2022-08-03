@@ -1,5 +1,5 @@
 /*
-! tailwindcss v3.0.24 | MIT License | https://tailwindcss.com
+! tailwindcss v3.1.7 | MIT License | https://tailwindcss.com
 */
 
 /*
@@ -190,6 +190,8 @@ textarea {
   font-family: inherit;
   /* 1 */
   font-size: 100%;
+  /* 1 */
+  font-weight: inherit;
   /* 1 */
   line-height: inherit;
   /* 1 */
@@ -435,46 +437,4 @@ img,
 video {
   max-width: 100%;
   height: auto;
-}
-
-/*
-Ensure the default browser behavior of the `hidden` attribute.
-*/
-
-[hidden] {
-  display: none;
-}
-
-.twcss-container {
-  width: 100%;
-}
-
-@media (min-width: 320px) {
-  .twcss-container {
-    max-width: 320px;
-  }
-}
-
-@media (min-width: 768px) {
-  .twcss-container {
-    max-width: 768px;
-  }
-}
-
-@media (min-width: 1024px) {
-  .twcss-container {
-    max-width: 1024px;
-  }
-}
-
-@media (min-width: 1440px) {
-  .twcss-container {
-    max-width: 1440px;
-  }
-}
-
-@media (min-width: 1920px) {
-  .twcss-container {
-    max-width: 1920px;
-  }
 }
