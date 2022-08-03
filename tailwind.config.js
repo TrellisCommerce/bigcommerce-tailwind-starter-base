@@ -1,5 +1,13 @@
 module.exports = {
   prefix: 'twcss-',
+  corePlugins: {
+    backdropOpacity: false,
+    backgroundOpacity: false,
+    borderOpacity: false,
+    divideOpacity: false,
+    ringOpacity: false,
+    textOpacity: false,
+  },
   content: [
     './templates/components/**/**/*.html',
     './templates/layout/*.html',
