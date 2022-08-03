@@ -1,6 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  prefix: 'twcss-',
+  prefix: 'tw-',
   corePlugins: {
     backdropOpacity: false,
     backgroundOpacity: false,
