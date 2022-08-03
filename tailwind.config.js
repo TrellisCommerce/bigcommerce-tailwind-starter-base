@@ -1,6 +1,14 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   prefix: 'twcss-',
+  corePlugins: {
+    backdropOpacity: false,
+    backgroundOpacity: false,
+    borderOpacity: false,
+    divideOpacity: false,
+    ringOpacity: false,
+    textOpacity: false,
+  },
   content: ['./templates/**/*.html'],
   presets: [],
   darkMode: 'media', // or 'class'
