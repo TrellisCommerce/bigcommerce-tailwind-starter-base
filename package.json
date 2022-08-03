@@ -75,6 +75,7 @@
     "build": "npx webpack --config webpack.prod.js",
     "buildDev": "npx webpack --config webpack.dev.js",
     "lighthouse": "npx lighthouse --config-path=lighthouse-config.js --quiet --output json --chrome-flags=\"--headless\" $URL | jq '.audits | map_values(.rawValue)'",
+    "tailwind": "npx tailwindcss -i ./assets/scss/app-tailwind.css -o ./assets/scss/app.scss --watch",
     "test": "npx jest",
     "stylelint": "npx stylelint **/*.scss",
     "stylelint:fix": "npx stylelint --fix **/*.scss",
