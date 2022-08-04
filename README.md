@@ -8,7 +8,7 @@ The starter theme includes an integration of:
 
 ## [TailwindCSS](https://tailwindcss.com/)
 
-- [Configured](https://markustripp.medium.com/extend-shopify-dawn-theme-with-a-custom-tailwind-css-carousel-section-e3efe3ecf18e) to use `prefix: twcss-` in order to not clash with Cornerstone's existing styles
+- [Configured](https://markustripp.medium.com/extend-shopify-dawn-theme-with-a-custom-tailwind-css-carousel-section-e3efe3ecf18e) to use `prefix: tw-` in order to not clash with Cornerstone's existing styles
 
 ## [Trellis' Prettier config](https://www.npmjs.com/package/@trelliscommerce/prettier-config) with Husky pre-commit hooks
 
@@ -36,7 +36,7 @@ git pull upstream main
 
 2. Add upstream link if you get the error `fatal: 'upstream' does not appear to be a git repository` run: `git remote add upstream https://github.com/bigcommerce/cornerstone.git` or `git remote add upstream https://github.com/TrellisCommerce/bigcommerce-cornerstone-tailwind-starter-base.git` depending on which repository you want to pull updates from
 
-3. Anytime you add a TailwindCSS class (remember to prefix it with twcss-), run the CLI tool to scan your template files for classes and build your CSS to assets/app.css:
+3. Anytime you add a TailwindCSS class (remember to prefix it with tw-), run the CLI tool to scan your template files for classes and build your CSS to assets/app.css:
    `npx tailwindcss -i ./assets/scss/app-tailwind.css -o ./assets/scss/app.scss --watch`
 
 - Run this command in a separate terminal so it will continue to run while you are developing.
