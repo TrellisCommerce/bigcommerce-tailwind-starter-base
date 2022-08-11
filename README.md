@@ -23,13 +23,13 @@ The starter theme includes an integration of:
 
 ## Stencil Push Your Theme
 
-3. Create an [API token](https://developer.bigcommerce.com/stencil-docs/ZG9jOjIyMDcwMQ-live-previewing-a-theme) with theme publishing permissions
+1. Create an [API token](https://developer.bigcommerce.com/stencil-docs/ZG9jOjIyMDcwMQ-live-previewing-a-theme) with theme publishing permissions
 
-4. To connect to your store, run `stencil init --url https://XXX.mybigcommerce.com --token XXX`
+2. To connect to your store, run `stencil init --url https://XXX.mybigcommerce.com --token XXX`
 
-5. To pull down the configuration from the active theme on your live store and updates your local configuration, run `stencil pull`
+3. To pull down the configuration from the active theme on your live store and updates your local configuration, run `stencil pull`
 
-6. To bundle your theme into a zip file and then push the theme to your BigCommerce store, run `stencil push`
+4. To bundle your theme into a zip file and then push the theme to your BigCommerce store, run `stencil push`
 
 ## Common local development commands
 
