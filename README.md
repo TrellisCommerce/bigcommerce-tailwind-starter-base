@@ -19,16 +19,22 @@ The starter theme includes an integration of:
 
 1. Fork this repository, navigate to the directory, run `npm install`
 
-2. Create an [API token](https://developer.bigcommerce.com/stencil-docs/ZG9jOjIyMDcwMQ-live-previewing-a-theme) with theme publishing permissions
+2. After `npm install` has completed, run `npm run tailwind` to start the Tailwind `--watch` [command](https://tailwindcss.com/docs/installation).
 
-3. To connect to your theme, run `stencil init --url https://XXX.mybigcommerce.com --token XXX`
+## Stencil Push Your Theme
 
-4. To pull down the configuration from the active theme on your live store and updates your local configuration, run `stencil pull`
+1. Create an [API token](https://developer.bigcommerce.com/stencil-docs/ZG9jOjIyMDcwMQ-live-previewing-a-theme) with theme publishing permissions
 
-5. To bundle your theme into a zip file and then push the theme to your BigCommerce store, run `stencil push`
+2. To connect to your store, run `stencil init --url https://XXX.mybigcommerce.com --token XXX`
+
+3. To pull down the configuration from the active theme on your live store and updates your local configuration, run `stencil pull`
+
+4. To bundle your theme into a zip file and then push the theme to your BigCommerce store, run `stencil push`
 
 ## Common local development commands
-1. Before beginning any work, it is good practice to pull down the latest changes from the BigCommerce Cornerstone theme: 
+
+1. Before beginning any work, it is good practice to pull down the latest changes from the BigCommerce Cornerstone theme:
+
 ```
 git fetch upstream
 git pull upstream main
