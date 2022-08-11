@@ -6,6 +6,7 @@ module.exports = {
     backgroundOpacity: false,
     borderOpacity: false,
     divideOpacity: false,
+    placeholderOpacity: false,
     ringOpacity: false,
     textOpacity: false,
   },
