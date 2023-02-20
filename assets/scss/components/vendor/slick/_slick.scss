@@ -171,6 +171,14 @@ div.slick-slider {
 }
 
 //
+// iOS Safari fix https://github.com/kenwheeler/slick/issues/2156
+// -----------------------------------------------------------------------------
+.slick-slide .card-image,
+.slick-slide .heroCarousel-image {
+  -webkit-touch-callout: default;
+}
+
+//
 // Carousel tooltips for buttons and bullets
 // -----------------------------------------------------------------------------
 

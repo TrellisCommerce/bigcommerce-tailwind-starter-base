@@ -1,5 +1,5 @@
-import _ from 'lodash';
 import PageManager from './page-manager';
+import _ from 'lodash';
 import nod from './common/nod';
 import Wishlist from './wishlist';
 import validation from './common/form-validation';
@@ -37,6 +37,7 @@ export default class Account extends PageManager {
     const $paymentMethodForm = classifyForm('form[data-payment-method-form]');
     const $reorderForm = classifyForm('[data-account-reorder-form]');
     const $invoiceButton = $('[data-print-invoice]');
+    const $bigCommerce = window.BigCommerce;
 
     compareProducts(this.context);
 
@@ -89,6 +90,31 @@ export default class Account extends PageManager {
 
     if ($reorderForm.length) {
       this.initReorderForm($reorderForm);
+    }
+
+    if ($bigCommerce && $bigCommerce.accountPayments) {
+      window.BigCommerce.accountPayments({
+        widgetStyles: {
+          base: {
+            color: '#666666',
+            cursor: 'pointer',
+            display: 'block',
+            fontSize: '1rem',
+            lineHeight: '1.5',
+            marginBottom: '0.5rem',
+          },
+          error: {
+            color: 'red',
+          },
+          placeholder: {
+            color: '#d8d8d8',
+          },
+          validated: {
+            color: 'green',
+          },
+        },
+        countries: this.context.countries,
+      });
     }
 
     this.bindDeleteAddress();
@@ -429,7 +455,7 @@ export default class Account extends PageManager {
     const formEditSelector = 'form[data-edit-account-form]';
     const editValidator = nod({
       submit: '${formEditSelector} input[type="submit"]',
-      tap: announceInputErrorMessage,
+      delay: 900,
     });
     const emailSelector = `${formEditSelector} [data-field-type="EmailAddress"]`;
     const $emailElement = $(emailSelector);
@@ -517,13 +543,17 @@ export default class Account extends PageManager {
       }
 
       event.preventDefault();
+      setTimeout(() => {
+        const earliestError = $('span.form-inlineMessage:first').prev('input');
+        earliestError.focus();
+      }, 900);
     });
   }
 
   registerInboxValidation($inboxForm) {
     const inboxValidator = nod({
       submit: 'form[data-inbox-form] input[type="submit"]',
-      tap: announceInputErrorMessage,
+      delay: 900,
     });
 
     inboxValidator.add([
@@ -564,6 +594,11 @@ export default class Account extends PageManager {
       }
 
       event.preventDefault();
+
+      setTimeout(() => {
+        const earliestError = $('span.form-inlineMessage:first').prev('input');
+        earliestError.focus();
+      }, 900);
     });
   }
 }

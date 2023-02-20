@@ -7,7 +7,59 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## Draft
 
+## 6.8.0 (01-26-2023)
+
+- Add remote_api_scripts into cart/preview template to let GA3 snippet to fire the Product Added event, when clicking Add to cart button on Product detail page and rendering the response in popup. [#2281](https://github.com/bigcommerce/cornerstone/pull/2281)
+- Stored XSS within Wishlist creation.[#2289](https://github.com/bigcommerce/cornerstone/issues/2289)
+- Set "Show quick payment buttons" setting to true by default [#2283]https://github.com/bigcommerce/cornerstone/pull/2283
+- Fixed en-CA translation warning in terminal. [#2278][https://github.com/bigcommerce/cornerstone/pull/2278]
+- Added manual captcha to Contact Us form for additional spam protection. [#2290](https://github.com/bigcommerce/cornerstone/pull/2290)
+- Fixed PDP not respecting "quantity box" display settings. [#2291](https://github.com/bigcommerce/cornerstone/pull/2291)
+- Fixed product panels with scrolling/arrows prevent contextual menu on mobile devices [#2310](https://github.com/bigcommerce/cornerstone/pull/2310)
+- Added integrarion of storefront-account-payments lib [#2288][https://github.com/bigcommerce/cornerstone/pull/2288]
+- Bump Stencil utils to 6.13.0 [#2300][https://github.com/bigcommerce/cornerstone/pull/2300]
+- Removed non-working functionality from schema.json [#2301][https://github.com/bigcommerce/cornerstone/pull/2301]
+- Refactored `hide_price_from_guests` logic around `show_cart_action` use [#2304](https://github.com/bigcommerce/cornerstone/pull/2304)
+- Removed all Google AMP template files [#2308](https://github.com/bigcommerce/cornerstone/pull/2308)
+- Webpack 5, Node 18 Support [#2311][https://github.com/bigcommerce/cornerstone/pull/2311]
+- Customer order summary with both physical and digital items shows shipping as null [#2309](https://github.com/bigcommerce/cornerstone/pull/2309)
+
+## 6.7.0 (11-03-2022)
+
+- Fixed escaping on created store account confirm message. [#2265]https://github.com/bigcommerce/cornerstone/pull/2265
+- Migrate Cornerstone to new "Hide Price From Guests" functionality [#2262](https://github.com/bigcommerce/cornerstone/pull/2262)
+- Add Accelerated buttons container into 'add to cart' popup on product details page [#2264](https://github.com/bigcommerce/cornerstone/pull/2264)
+- Made PDP wallet buttons container hidden in cases when the product is not purchasable or out of stock [#2267](https://github.com/bigcommerce/cornerstone/pull/2267)
+- Updated PayPal Accelerated Checkout default button styles [#2268](https://github.com/bigcommerce/cornerstone/pull/2268)
+- Add logic to collect Product Details data and send it to the BC App stencil template through custom event [#2270](https://github.com/bigcommerce/cornerstone/pull/2270)
+- Allow quantity of "0" in cart to remove item [#2266](https://github.com/bigcommerce/cornerstone/pull/2266)
+- Fix the issue with getting product details data if the product details form is valid on page load [#2271](https://github.com/bigcommerce/cornerstone/pull/2271)
+- Delay validation on account signup, message form, and account edit page [#2274](https://github.com/bigcommerce/cornerstone/pull/2274)
+- Update key render-blocking resources to be preloaded via HTTP headers/Early Hints [#2261](https://github.com/bigcommerce/cornerstone/pull/2261)
+- Fix styles for wallet buttons on PDP [#2285](https://github.com/bigcommerce/cornerstone/pull/2285)
+
+## 6.6.1 (09-14-2022)
+
+## 6.6.0 (09-13-2022)
+
+- Add unionpay img to be display on custumers account. [#2260](https://github.com/bigcommerce/cornerstone/pull/2260)
+- Translations update September 2022. [#2258](https://github.com/bigcommerce/cornerstone/issues/2258)
+- Unable to navigate to home page from search results page after clicking Back button on browser. [#2238](https://github.com/bigcommerce/cornerstone/issues/2238)
+- Cannot Vault 16-digit Diners Club cards - creditcards module version is out of date [#2239](https://github.com/bigcommerce/cornerstone/issues/2239)
+- Incorrect translation key for Diners Club card type. [#2237](https://github.com/bigcommerce/cornerstone/issues/2237).
+- Make screen reader say error messages when editing customer account. [#2233](https://github.com/bigcommerce/cornerstone/pull/2233)
+- On customer message page, screen reader should say each error [#2234]https://github.com/bigcommerce/cornerstone/pull/2234
 - Bump webpack-bundle-analyzer [#2229]https://github.com/bigcommerce/cornerstone/pull/2229
+- Make screen reader say all errors then each error while tabbing. [#2230]https://github.com/bigcommerce/cornerstone/pull/2230
+- Clarify customer order pagination. [#2241]https://github.com/bigcommerce/cornerstone/pull/2241
+- Bump stencil utils with BODL events: Add to Cart and Remove from Cart [#2252]https://github.com/bigcommerce/cornerstone/pull/2252
+- Add global region below the navigation in the header [#2231](https://github.com/bigcommerce/cornerstone/pull/2231)
+- Pass theme settings from blog page to blog post template. [#2253]https://github.com/bigcommerce/cornerstone/pull/2253
+- Bump jQuery to 3.6.1. [#2250](https://github.com/bigcommerce/cornerstone/issues/2250)
+- Fix "incorrect value type" for anonymous reviews in Google Search Console [#2255]https://github.com/bigcommerce/cornerstone/pull/2255
+- Reduce lodash usage [#2256]https://github.com/bigcommerce/cornerstone/pull/2256
+- Bump stencil utils to 6.12.1: fix broken add to cart button [#2259]https://github.com/bigcommerce/cornerstone/pull/2259
+- Add smart buttons attributes for various payment providers in Page builder [#2212]https://github.com/bigcommerce/cornerstone/pull/2212
 
 ## 6.5.0 (06-24-2022)
 
@@ -90,6 +142,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Google AMP feature request - Add in release date info for preorder products. [#2107](https://github.com/bigcommerce/cornerstone/pull/2107)
 - Translation for states select field on account signup page. [#2105](https://github.com/bigcommerce/cornerstone/pull/2105)
 - Added description field below payment provider name on "My Account" -> "Payment Methods" page. [#2111](https://github.com/bigcommerce/cornerstone/pull/2111)
+- Added styling config for the PayPal Accelerated Checkout button [#2254](https://github.com/bigcommerce/cornerstone/pull/2254)
 
 ## 6.0.0 (08-06-2021)
 

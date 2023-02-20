@@ -1,8 +1,8 @@
-import { bind, debounce } from 'lodash';
-import utils from '@bigcommerce/stencil-utils';
 import PageManager from './page-manager';
+import { bind, debounce } from 'lodash';
 import checkIsGiftCertValid from './common/gift-certificate-validator';
 import { createTranslationDictionary } from './common/utils/translations-utils';
+import utils from '@bigcommerce/stencil-utils';
 import ShippingEstimator from './cart/shipping-estimator';
 import { defaultModal, showAlertModal, ModalEvents } from './global/modal';
 import CartItemDetails from './common/cart-item-details';
@@ -46,8 +46,7 @@ export default class Cart extends PageManager {
     // Does not quality for min/max quantity
     if (newQty < minQty) {
       return showAlertModal(minError);
-    }
-    if (maxQty > 0 && newQty > maxQty) {
+    } else if (maxQty > 0 && newQty > maxQty) {
       return showAlertModal(maxError);
     }
 
@@ -80,18 +79,16 @@ export default class Cart extends PageManager {
     let invalidEntry;
 
     // Does not quality for min/max quantity
-    if (!newQty) {
+    if (!Number.isInteger(newQty)) {
       invalidEntry = $el.val();
       $el.val(oldQty);
       return showAlertModal(
         this.context.invalidEntryMessage.replace('[ENTRY]', invalidEntry),
       );
-    }
-    if (newQty < minQty) {
+    } else if (newQty < minQty) {
       $el.val(oldQty);
       return showAlertModal(minError);
-    }
-    if (maxQty > 0 && newQty > maxQty) {
+    } else if (maxQty > 0 && newQty > maxQty) {
       $el.val(oldQty);
       return showAlertModal(maxError);
     }
@@ -119,6 +116,7 @@ export default class Cart extends PageManager {
       if (response.data.status === 'succeed') {
         this.refreshContent(true);
       } else {
+        this.$overlay.hide();
         showAlertModal(response.data.errors.join('\n'));
       }
     });
