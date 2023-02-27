@@ -119,7 +119,7 @@ export default class Auth extends PageManager {
     const validationModel = validation($createAccountForm, this.context);
     const createAccountValidator = nod({
       submit: `${this.formCreateSelector} input[type='submit']`,
-      tap: announceInputErrorMessage,
+      delay: 900,
     });
     const $stateElement = $('[data-field-type="State"]');
     const emailSelector = `${this.formCreateSelector} [data-field-type='EmailAddress']`;
@@ -193,14 +193,21 @@ export default class Auth extends PageManager {
     }
 
     $createAccountForm.on('submit', (event) => {
-      createAccountValidator.performCheck();
-
-      if (createAccountValidator.areAll('valid')) {
-        return;
-      }
-
-      event.preventDefault();
+      this.submitAction(event, createAccountValidator);
     });
+  }
+
+  submitAction(event, validator) {
+    validator.performCheck();
+
+    if (validator.areAll('valid')) {
+      return;
+    }
+    event.preventDefault();
+    setTimeout(() => {
+      const earliestError = $('span.form-inlineMessage:first').prev('input');
+      earliestError.focus();
+    }, 900);
   }
 
   /**
