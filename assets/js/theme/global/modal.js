@@ -1,5 +1,5 @@
-import * as focusTrap from 'focus-trap';
 import foundation from './foundation';
+import * as focusTrap from 'focus-trap';
 
 const bodyActiveClass = 'has-activeModal';
 const loadingOverlayClass = 'loadingOverlay';
@@ -215,6 +215,8 @@ export class Modal {
 
   onModalClose() {
     $('body').removeClass(bodyActiveClass);
+
+    this.clearContent();
   }
 
   onModalClosed() {
