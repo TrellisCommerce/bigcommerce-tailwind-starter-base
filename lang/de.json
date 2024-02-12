@@ -79,6 +79,7 @@
         "remove_item": "{name} aus dem Warenkorb entfernen",
         "confirm_delete": "Möchten Sie diesen Artikel wirklich löschen?",
         "coupons": {
+            "apply_coupon": "Coupon anwenden",
             "empty_error": "Bitte geben Sie Ihren Gutscheincode ein.",
             "cancel": "Abbrechen",
             "add_code": "Code hinzufügen",
@@ -89,6 +90,7 @@
             "remove": "Entfernen"
         },
         "gift_certificates": {
+            "apply_gift_certificate": "Geschenkgutschein anwenden",
             "change_gift_certificate": "{certificate_name} ändern",
             "add_cert_code": "Geschenkgutschein hinzufügen",
             "gift_certificate": "Geschenkgutschein",
@@ -388,6 +390,7 @@
         "payment_methods": {
             "heading": "Zahlungsmethoden",
             "payment_method": "Zahlungsmethode",
+            "bank_account": "Bankkonto",
             "billing_address": "Rechnungsadresse",
             "card_ending_in": "endet auf {last_four}",
             "card_expiry": "{month}/{year}",
@@ -409,6 +412,7 @@
                 "unionpay": "Union Pay",
                 "visa": "Visa"
             },
+            "ach": "ACH",
             "paypal": "PayPal",
             "billing_address_labels": {
                 "address_line_1": "Adresszeile 1",

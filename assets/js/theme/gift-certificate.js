@@ -1,10 +1,10 @@
-import { api } from '@bigcommerce/stencil-utils';
 import PageManager from './page-manager';
 import nod from './common/nod';
 import checkIsGiftCertValid from './common/gift-certificate-validator';
 import formModel from './common/models/forms';
 import { createTranslationDictionary } from './common/utils/translations-utils';
 import { announceInputErrorMessage } from './common/utils/form-utils';
+import { api } from '@bigcommerce/stencil-utils';
 import { defaultModal } from './global/modal';
 
 export default class GiftCertificate extends PageManager {
@@ -183,6 +183,31 @@ export default class GiftCertificate extends PageManager {
       }
     });
 
+    const createFrame = (container, html) => {
+      const frame = $('<iframe />')
+        .width('100%')
+        .attr('frameBorder', '0')
+        .appendTo(container)[0];
+
+      // Grab the frame's document object
+      const frameDoc = frame.contentWindow
+        ? frame.contentWindow.document
+        : frame.contentDocument;
+
+      frameDoc.open();
+      frameDoc.write(html);
+      frameDoc.close();
+
+      // Calculate max height for the iframe
+      const maxheight = Math.max($(window).height() - 300, 300);
+
+      // Auto adjust the iframe's height once its document is ready
+      $(frameDoc).ready(() => {
+        const height = Math.min(frameDoc.body.scrollHeight + 20, maxheight);
+        $(frame).height(height);
+      });
+    };
+
     $('#gift-certificate-preview').click((event) => {
       event.preventDefault();
 
@@ -204,7 +229,10 @@ export default class GiftCertificate extends PageManager {
           return modal.updateContent(this.context.previewError);
         }
 
-        modal.updateContent(content, { wrap: true });
+        modal.updateContent();
+
+        const container = $('#modal-content');
+        createFrame(container, content);
       });
     });
   }

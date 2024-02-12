@@ -79,6 +79,7 @@
         "remove_item": "{name} verwijderen uit winkelmandje",
         "confirm_delete": "Weet u zeker dat u dit artikel wilt verwijderen?",
         "coupons": {
+            "apply_coupon": "Coupon toepassen",
             "empty_error": "Voer uw couponcode in.",
             "cancel": "Annuleren",
             "add_code": "Code toevoegen",
@@ -89,6 +90,7 @@
             "remove": "Verwijderen"
         },
         "gift_certificates": {
+            "apply_gift_certificate": "Cadeaubon toepassen",
             "change_gift_certificate": "{certificate_name} wijzigen",
             "add_cert_code": "Bon toevoegen",
             "gift_certificate": "Cadeaubon",
@@ -388,6 +390,7 @@
         "payment_methods": {
             "heading": "Betaalmethoden",
             "payment_method": "Betaalmethode",
+            "bank_account": "Bankrekening",
             "billing_address": "Factuuradres",
             "card_ending_in": "eindigend op {last_four}",
             "card_expiry": "{month}/{year}",
@@ -409,6 +412,7 @@
                 "unionpay": "Union Pay",
                 "visa": "Visa"
             },
+            "ach": "ACH",
             "paypal": "PayPal",
             "billing_address_labels": {
                 "address_line_1": "Adresregel 1",

@@ -47,8 +47,11 @@ category:
         {{/if}}
     {{/if}}
 
-    <div class="page-content" id="product-listing-container">
+    <main class="page-content" id="product-listing-container">
         {{> components/category/product-listing}}
+    </main>
+
+    <div class="page-region">
         {{{region name="category_below_content"}}}
     </div>
 </div>

@@ -7,6 +7,56 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## Draft
 
+## 6.13.0 (02-12-2024)
+
+- Fix HTML markup for product listing and below content region [#2426](https://github.com/bigcommerce/cornerstone/pull/2426)
+- With Product Filtering enabled widgets on category page disappear after navigating using pagination [#2425](https://github.com/bigcommerce/cornerstone/pull/2425)
+- Update layout with correct usage of main tag [#2421](https://github.com/bigcommerce/cornerstone/pull/2421)
+- Anchor links on category pages are not working when product filtering is enabled [#2415](https://github.com/bigcommerce/cornerstone/pull/2415)
+- Dispatch an event on productOptionsChanged [#2400](https://github.com/bigcommerce/cornerstone/pull/2400)
+- Check lang helpers usage and existence of key in translation file [#2403](https://github.com/bigcommerce/cornerstone/pull/2403)
+- Display fees on cart page [#2376](https://github.com/bigcommerce/cornerstone/pull/2376)
+- Replace Twitter logo with X logo within social sharing and social link components [#2387](https://github.com/bigcommerce/cornerstone/pull/2387)
+- Added nvm config [#2389](https://github.com/bigcommerce/cornerstone/pull/2389)
+- Displaying the Hidden cart_order_source Input Field on PDP page [#2392](https://github.com/bigcommerce/cornerstone/pull/2392)
+- Videos added through the Product Editor have their thumbnails cropped compared to videos added through the page builder [#2413](https://github.com/bigcommerce/cornerstone/pull/2413)
+- Update Shop By Price Widget [#2408](https://github.com/bigcommerce/cornerstone/pull/2408)
+- 'Please Select a file' popup forces shopper to re-upload file if the option type is 'File Upload' and is set to required [#2409](https://github.com/bigcommerce/cornerstone/pull/2409)
+- Top Global Region Image Widget overlaps the mobile menu [#2402](https://github.com/bigcommerce/cornerstone/pull/2402)
+- Changed default PayPal checkout button color [#2405](https://github.com/bigcommerce/cornerstone/pull/2405)
+- Changed default PayPal checkout button size [#2406](https://github.com/bigcommerce/cornerstone/pull/2406)
+- Change case of Page builder menu item text [#2407](https://github.com/bigcommerce/cornerstone/pull/2407)
+- Corrected typo with the word default previously deafault in config.json [#2410](https://github.com/bigcommerce/cornerstone/pull/2410)
+- Adding autocomplete to common input fields [2397](https://github.com/bigcommerce/cornerstone/pull/2397)
+- Pre-Orded text in Polish looks cropped in the button on Product page [2414](https://github.com/bigcommerce/cornerstone/pull/2414)
+- Use triple sash on customer's company name to prevent escaping ampersands [#2399](https://github.com/bigcommerce/cornerstone/pull/2399)
+- Adding aria attributes to cart page coupon code and gift cert buttons [#2391](https://github.com/bigcommerce/cornerstone/pull/2391)
+
+## 6.12.0 (07-06-2023)
+
+- sync package lock file [#2373](https://github.com/bigcommerce/cornerstone/pull/2373)
+- Stored payment method name is not visible in Cornerstone Bold theme style [#2371](https://github.com/bigcommerce/cornerstone/pull/2371)
+- (sanitize product.description) in the theme results to ‘error length of description’ from Google indexing for lengthy product description [#2363](https://github.com/bigcommerce/cornerstone/pull/2363)
+- Added style configs to payment buttons [#2361](https://github.com/bigcommerce/cornerstone/pull/2361)
+- Bump Stencil utils to 6.15.1 [#2365][https://github.com/bigcommerce/cornerstone/pull/2365]
+- Write a Review on product page shows blank pop up on second click. [#2368][https://github.com/bigcommerce/cornerstone/pull/2368]
+- Added ACH payment method section to My Account -> Payment Methods page [#2362](https://github.com/bigcommerce/cornerstone/pull/2362)
+- Remove data_tag_enabled check from everywhere [#2369][https://github.com/bigcommerce/cornerstone/pull/2369]
+- Fix add product to cart on iphone x (iphone version 11) [#2370][https://github.com/bigcommerce/cornerstone/pull/2370]
+- Display fees on cart page [#2360](https://github.com/bigcommerce/cornerstone/pull/2376)
+
+## 6.11.0 (05-24-2023)
+
+- Reverted fix for sold-out badge appearance [#2354](https://github.com/bigcommerce/cornerstone/pull/2354)
+- If the gift is a variant, the button "Change" shows in cart, and other variant are visible [#2349](https://github.com/bigcommerce/cornerstone/pull/2349)
+- Removes the URL encoding from the 'description' in the product rich snippet schema [#2350](https://github.com/bigcommerce/cornerstone/pull/2350)
+- Running Lighthouse npm script fails in terminal [#2345](https://github.com/bigcommerce/cornerstone/pull/2345)
+- Removed accelerated checkout integration [#2341](https://github.com/bigcommerce/cornerstone/pull/2341)
+- Added css classes for ApplePay Button [[#2344]](https://github.com/bigcommerce/cornerstone/pull/2344)
+- Added styling config for the Bolt smart payment button [[#2356]](https://github.com/bigcommerce/cornerstone/pull/2356)
+- Remove default whitespace from multiline input [#2355](https://github.com/bigcommerce/cornerstone/pull/2355)
+- Refresh page if no more item in the cart [#2360](https://github.com/bigcommerce/cornerstone/pull/2360)
+
 ## 6.10.0 (03-23-2023)
 
 - A bug with the display of the product quantity on the PDP [#2340](https://github.com/bigcommerce/cornerstone/pull/2340)

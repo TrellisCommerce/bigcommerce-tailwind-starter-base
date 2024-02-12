@@ -229,11 +229,16 @@ export default class Cart extends PageManager {
       this.$cartAdditionalCheckoutBtns.html(response.additionalCheckoutButtons);
 
       $cartPageTitle.replaceWith(response.pageTitle);
-      this.bindEvents();
-      this.$overlay.hide();
 
       const quantity =
         $('[data-cart-quantity]', this.$cartContent).data('cartQuantity') || 0;
+
+      if (!quantity) {
+        return window.location.reload();
+      }
+
+      this.bindEvents();
+      this.$overlay.hide();
 
       $('body').trigger('cart-quantity-update', quantity);
 
@@ -312,6 +317,7 @@ export default class Cart extends PageManager {
 
       $(event.currentTarget).hide();
       $couponContainer.show();
+      $couponContainer.attr('aria-hidden', false);
       $('.coupon-code-cancel').show();
       $codeInput.trigger('focus');
     });
@@ -320,6 +326,7 @@ export default class Cart extends PageManager {
       event.preventDefault();
 
       $couponContainer.hide();
+      $couponContainer.attr('aria-hidden', true);
       $('.coupon-code-cancel').hide();
       $('.coupon-code-add').show();
     });
@@ -353,12 +360,14 @@ export default class Cart extends PageManager {
       event.preventDefault();
       $(event.currentTarget).toggle();
       $certContainer.toggle();
+      $certContainer.attr('aria-hidden', false);
       $('.gift-certificate-cancel').toggle();
     });
 
     $('.gift-certificate-cancel').on('click', (event) => {
       event.preventDefault();
       $certContainer.toggle();
+      $certContainer.attr('aria-hidden', true);
       $('.gift-certificate-add').toggle();
       $('.gift-certificate-cancel').toggle();
     });

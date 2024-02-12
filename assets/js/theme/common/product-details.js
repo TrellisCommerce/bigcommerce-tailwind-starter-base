@@ -348,6 +348,16 @@ export default class ProductDetails extends ProductDetailsBase {
             .find('.productView-info');
           modalFactory('[data-reveal]', { $context });
         }
+
+        document.dispatchEvent(
+          new CustomEvent('onProductOptionsChanged', {
+            bubbles: true,
+            detail: {
+              content: productAttributesData,
+              data: productAttributesContent,
+            },
+          }),
+        );
       },
     );
   }
