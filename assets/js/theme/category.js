@@ -2,7 +2,7 @@ import { hooks } from '@bigcommerce/stencil-utils';
 import CatalogPage from './catalog';
 import compareProducts from './global/compare-products';
 import FacetedSearch from './common/faceted-search';
-import { createTranslationDictionary } from './common/utils/translations-utils';
+import { createTranslationDictionary } from '../theme/common/utils/translations-utils';
 
 export default class Category extends CatalogPage {
   constructor(context) {
@@ -48,11 +48,21 @@ export default class Category extends CatalogPage {
 
     compareProducts(this.context);
 
-    if ($('#facetedSearch').length > 0) {
-      this.initFacetedSearch();
-    } else {
+    this.initFacetedSearch();
+
+    if (!$('#facetedSearch').length) {
       this.onSortBySubmit = this.onSortBySubmit.bind(this);
       hooks.on('sortBy-submitted', this.onSortBySubmit);
+
+      // Refresh range view when shop-by-price enabled
+      const urlParams = new URLSearchParams(window.location.search);
+
+      if (urlParams.has('search_query')) {
+        $('.reset-filters').show();
+      }
+
+      $('input[name="price_min"]').attr('value', urlParams.get('price_min'));
+      $('input[name="price_max"]').attr('value', urlParams.get('price_max'));
     }
 
     $('a.reset-btn').on('click', () =>
