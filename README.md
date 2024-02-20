@@ -23,7 +23,7 @@ The starter theme includes an integration of:
 
 ## Stencil Push Your Theme
 
-1. Create an [API token](https://developer.bigcommerce.com/stencil-docs/ZG9jOjIyMDcwMQ-live-previewing-a-theme) with theme publishing permissions
+1. Create an [API token](https://support.bigcommerce.com/s/article/Store-API-Accounts?language=en_US#creating) with theme publishing permissions
 
 2. To connect to your store, run `stencil init --url https://XXX.mybigcommerce.com --token XXX`
 
