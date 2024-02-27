@@ -163,6 +163,176 @@
             "default": "a1"
           }
         ]
+      },
+      {
+        "label": "Heading",
+        "settings": [
+          {
+            "type": "text",
+            "label": "Text",
+            "id": "heading_text"
+          },
+          {
+            "type": "select",
+            "label": "Size",
+            "id": "heading_size",
+            "default": "text-6xl",
+            "typeMeta": {
+              "selectOptions": [
+                {
+                  "label": "Small",
+                  "value": "text-4xl"
+                },
+                {
+                  "label": "Medium",
+                  "value": "text-6xl"
+                },
+                {
+                  "label": "Large",
+                  "value": "text-8xl"
+                }
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "label": "Body",
+        "settings": [
+          {
+            "type": "text",
+            "label": "Text",
+            "id": "body_text"
+          },
+          {
+            "type": "select",
+            "label": "Style",
+            "id": "body_style",
+            "default": "text-body",
+            "typeMeta": {
+              "selectOptions": [
+                {
+                  "label": "Body",
+                  "value": "text-body"
+                },
+                {
+                  "label": "Subtitle",
+                  "value": "text-sm"
+                },
+                {
+                  "label": "Uppercase",
+                  "value": "uppercase"
+                }
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "label": "Button One",
+        "settings": [
+          {
+            "label": "Button Text",
+            "type": "input",
+            "id": "button_one_text",
+            "default": ""
+          },
+          {
+            "label": "Button Link",
+            "type": "input",
+            "id": "button_one_link",
+            "typeMeta": {
+              "placeholder": "/path/ or https://"
+            }
+          },
+          {
+            "label": "External Link",
+            "type": "boolean",
+            "id": "button_one_external",
+            "default": false
+          },
+          {
+            "label": "Button Color",
+            "type": "select",
+            "id": "button_one_color",
+            "typeMeta": {
+              "selectOptions": [
+                {
+                  "label": "Primary",
+                  "value": "primary"
+                },
+                {
+                  "label": "Secondary",
+                  "value": "secondary"
+                }
+              ]
+            },
+            "default": "primary"
+          }
+        ]
+      },
+      {
+        "label": "Button Two",
+        "settings": [
+          {
+            "label": "Button Text",
+            "type": "input",
+            "id": "button_two_text",
+            "default": ""
+          },
+          {
+            "label": "Button Link",
+            "type": "input",
+            "id": "button_two_link",
+            "typeMeta": {
+              "placeholder": "/path/ or https://"
+            }
+          },
+          {
+            "label": "External Link",
+            "type": "boolean",
+            "id": "button_two_external",
+            "default": false
+          },
+          {
+            "label": "Button Color",
+            "type": "select",
+            "id": "button_two_color",
+            "typeMeta": {
+              "selectOptions": [
+                {
+                  "label": "Primary",
+                  "value": "primary"
+                },
+                {
+                  "label": "Secondary",
+                  "value": "secondary"
+                }
+              ]
+            },
+            "default": "primary"
+          }
+        ]
+      },
+      {
+        "label": "TailwindCSS",
+        "settings": [
+          {
+            "type": "input",
+            "label": "TailwindCSS for Heading Text",
+            "id": "twcss_heading"
+          },
+          {
+            "type": "input",
+            "label": "TailwindCSS for Body Text",
+            "id": "twcss_body"
+          },
+          {
+            "type": "input",
+            "label": "TailwindCSS for Button",
+            "id": "twcss_button"
+          }
+        ]
       }
     ]
   }

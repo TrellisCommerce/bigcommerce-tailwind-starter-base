@@ -2,5 +2,13 @@
     Access GraphQL query data with {{_.data}}
     Access the widget id with {{_.id}}
 -->
-<pre style="white-space: pre-wrap;">{{json this}}</pre>
-{{{ json _.data }}}
+<section {{#if this.html_id}}id='{{this.html_id}}'{{/if}} class='trellis-widget'>
+    <div>
+        {{#if this.heading_text}}
+            <p class='{{this.heading_size}} {{this.twcss_heading}}'>{{this.heading_text}}</p>
+        {{/if}}
+        {{#if this.body_text}}
+            <p class='{{this.body_style}} {{this.twcss_body}}'>{{this.body_text}}</p>
+        {{/if}}
+    </div>
+</section>
