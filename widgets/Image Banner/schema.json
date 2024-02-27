@@ -1,0 +1,169 @@
+[
+  {
+    "type": "tab",
+    "label": "Image Banner",
+    "sections": [
+      {
+        "label": "General",
+        "settings": [
+          {
+            "type": "input",
+            "label": "HTML ID",
+            "id": "html_id"
+          },
+          {
+            "type": "imageManager",
+            "label": "First Image",
+            "id": "first_image",
+            "default": {
+              "src": "",
+              "type": "IMAGE_MANAGER"
+            }
+          },
+          {
+            "type": "input",
+            "label": "First Image alt text",
+            "id": "first_image_alt",
+            "typeMeta": {
+              "placeholder": "Descriptive text of first image"
+            }
+          },
+          {
+            "type": "imageManager",
+            "label": "Second Image",
+            "id": "second_image",
+            "default": {
+              "src": "",
+              "type": "IMAGE_MANAGER"
+            }
+          },
+          {
+            "type": "input",
+            "label": "Second Image alt text",
+            "id": "second_image_alt",
+            "typeMeta": {
+              "placeholder": "Descriptive text of second image"
+            }
+          },
+          {
+            "label": "Second Image display",
+            "type": "visibility",
+            "id": "second_image_visibility",
+            "default": "show"
+          },
+          {
+            "type": "range",
+            "label": "Image overlay opacity",
+            "id": "image_overlay_opacity",
+            "default": "0",
+            "typeMeta": {
+              "rangeValues": {
+                "min": "0",
+                "max": "100",
+                "step": "10",
+                "unit": "%"
+              }
+            }
+          },
+          {
+            "type": "select",
+            "label": "Banner height",
+            "id": "banner_height",
+            "default": "max-w-full h-auto",
+            "typeMeta": {
+              "selectOptions": [
+                {
+                  "label": "Small",
+                  "value": "min-h-52"
+                },
+                {
+                  "label": "Medium",
+                  "value": "min-h-72"
+                },
+                {
+                  "label": "Large",
+                  "value": "min-h-96"
+                },
+                {
+                  "label": "Adapt to First Image",
+                  "value": "max-w-full h-auto"
+                }
+              ]
+            }
+          },
+          {
+            "type": "alignment",
+            "label": "Desktop content position",
+            "id": "desktop_content_pos",
+            "typeMeta": {
+              "display": "both"
+            },
+            "default": {
+              "horizontal": "center",
+              "vertical": "middle"
+            }
+          },
+          {
+            "label": "Desktop content alignment",
+            "type": "alignment",
+            "id": "desktop_alignment",
+            "typeMeta": {
+              "display": "horizontal"
+            },
+            "default": {
+              "horizontal": "center"
+            }
+          },
+          {
+            "type": "boolean",
+            "label": "Show container on desktop",
+            "id": "show_container_desktop",
+            "default": "false"
+          },
+          {
+            "type": "boolean",
+            "label": "Stack images on mobile",
+            "id": "stack_mobile",
+            "default": "false"
+          },
+          {
+            "type": "boolean",
+            "label": "Show container on mobile",
+            "id": "show_container_mobile",
+            "default": "false"
+          },
+          {
+            "label": "Color scheme",
+            "type": "select",
+            "id": "color_scheme",
+            "typeMeta": {
+              "selectOptions": [
+                {
+                  "label": "Accent 1",
+                  "value": "a1"
+                },
+                {
+                  "label": "Accent 2",
+                  "value": "a2"
+                },
+                {
+                  "label": "Background 1",
+                  "value": "b1"
+                },
+                {
+                  "label": "Background 2",
+                  "value": "b2"
+                },
+                {
+                  "label": "Inverse",
+                  "value": "inverse"
+                }
+              ]
+            },
+            "default": "a1"
+          }
+        ]
+      }
+    ]
+  }
+]

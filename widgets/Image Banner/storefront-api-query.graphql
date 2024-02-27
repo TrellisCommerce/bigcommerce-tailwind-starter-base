@@ -1,0 +1,9 @@
+query WidgetQueries {
+  site {
+		settings {
+      url {
+        vanityUrl
+      }      
+    }
+  }
+}
