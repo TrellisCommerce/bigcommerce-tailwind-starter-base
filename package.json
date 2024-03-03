@@ -80,7 +80,8 @@
     "test": "npx jest",
     "stylelint": "npx stylelint **/*.scss",
     "stylelint:fix": "npx stylelint --fix **/*.scss",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "pull-widget-content": "node scripts/pull-widgets"
   },
   "prettier": "@trelliscommerce/prettier-config",
   "lint-staged": {
