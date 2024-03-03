@@ -1,0 +1,35 @@
+[
+  {
+    "first_image": {
+      "src": "",
+      "type": "IMAGE_MANAGER"
+    },
+    "second_image": {
+      "src": "",
+      "type": "IMAGE_MANAGER"
+    },
+    "second_image_visibility": "show",
+    "image_overlay_opacity": "0",
+    "banner_height": "max-w-full h-auto",
+    "desktop_content_pos": {
+      "horizontal": "center",
+      "vertical": "middle"
+    },
+    "desktop_alignment": {
+      "horizontal": "center"
+    },
+    "show_container_desktop": "false",
+    "stack_mobile": "false",
+    "show_container_mobile": "false",
+    "color_scheme": "a1",
+    "heading_size": "text-6xl",
+    "body_style": "text-body",
+    "button_one_color": "primary",
+    "button_two_color": "primary",
+    "_": {
+      "id": "33354588-1ba2-431d-b59f-9f4038e49ef7"
+    },
+    "heading_text": "Test",
+    "twcss_heading": "bg-red-500"
+  }
+]

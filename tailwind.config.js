@@ -9,7 +9,11 @@ module.exports = {
     ringOpacity: false,
     textOpacity: false,
   },
-  content: ['./templates/**/*.html', './widgets/**/*.{html,json}'],
+  content: [
+    './templates/**/*.html',
+    './widgets/content.json',
+    './widgets/**/*.{html,json}',
+  ],
   presets: [],
   darkMode: 'media', // or 'class'
   theme: {
