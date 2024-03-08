@@ -1,0 +1,21 @@
+<!-- DO NOT DELETE
+    Access GraphQL query data with {{_.data}}
+    Access the widget id with {{_.id}}
+-->
+<style>
+
+</style>
+<div id="rich-text-by-trellis-{{_.id}}">
+    <div class="rich-text rich-text-by-trellis content-container">
+        {{#if heading}}
+        <h2 class="{{heading_size}} {{tw_heading_attributes}}">
+            {{heading}}
+        </h2>
+        {{/if}}
+        <div class="rich-text__text">{{{content}}}</div>
+        {{#if link_label}}
+        <a role="link" href="{{ link_url }}">{{ link_label }}</a>
+        {{/if}}
+    </div>
+</div>
+
