@@ -1,0 +1,246 @@
+[
+    {
+        "type": "tab",
+        "label": "Content",
+        "sections": [
+            {
+                "label": "General",
+                "settings": [
+                    {
+                        "type": "productId",
+                        "label": "Product",
+                        "id": "product_id"
+                    },
+                    {
+                        "type": "alignment",
+                        "label": "Content Alignment",
+                        "id": "content_alignment",
+                        "typeMeta": {
+                            "display": "horizontal"
+                        },
+                        "default": {
+                            "horizontal": "center"
+                        }
+                    },
+                    {
+                        "type": "element",
+                        "label": "Product Title",
+                        "id": "product_title",
+                        "typeMeta": {
+                            "controls": {
+                                "visibility": {
+                                    "default": "show"
+                                },
+                                "advanced": {
+                                    "label": "Product Title Style",
+                                    "settings": [
+                                        {
+                                            "type": "color",
+                                            "label": "Color",
+                                            "id": "color",
+                                            "default": "#444444"
+                                        },
+                                        {
+                                            "type": "number",
+                                            "label": "Font Size",
+                                            "id": "size",
+                                            "default": {
+                                                "value": "24",
+                                                "type": "px"
+                                            }
+                                        }
+                                    ]
+                                }
+                            }
+                        }
+                    },
+                    {
+                        "type": "element",
+                        "label": "Product Image",
+                        "id": "product_image",
+                        "typeMeta": {
+                            "controls": {
+                                "visibility": {
+                                    "default": "show"
+                                },
+                                "advanced": {
+                                    "label": "Product Image Style",
+                                    "settings": [
+                                        {
+                                            "type": "select",
+                                            "label": "Image Scale",
+                                            "id": "scale",
+                                            "default": "fill",
+                                            "typeMeta": {
+                                                "selectOptions": [
+                                                    {
+                                                        "label": "Scale to Fill",
+                                                        "value": "fill"
+                                                    },
+                                                    {
+                                                        "label": "Scale to Fit",
+                                                        "value": "fit"
+                                                    }
+                                                ]
+                                            }
+                                        }
+                                    ]
+                                }
+                            }
+                        }
+                    },
+                    {
+                        "type": "element",
+                        "label": "Price",
+                        "id": "product_price",
+                        "typeMeta": {
+                            "controls": {
+                                "visibility": {
+                                    "default": "show"
+                                },
+                                "advanced": {
+                                    "label": "Product Price Style",
+                                    "settings": [
+                                        {
+                                            "type": "color",
+                                            "label": "Color",
+                                            "id": "color",
+                                            "default": "#444444"
+                                        },
+                                        {
+                                            "type": "number",
+                                            "label": "Font Size",
+                                            "id": "size",
+                                            "default": {
+                                                "value": "24",
+                                                "type": "px"
+                                            }
+                                        }
+                                    ]
+                                }
+                            }
+                        }
+                    },
+                    {
+                        "type": "element",
+                        "label": "Product Rating",
+                        "id": "product_rating",
+                        "typeMeta": {
+                            "controls": {
+                                "visibility": {
+                                    "default": "hide"
+                                },
+                                "advanced": {
+                                    "label": "Product Ratings Style",
+                                    "settings": [
+                                        {
+                                            "type": "color",
+                                            "label": "Text Color",
+                                            "id": "text_color",
+                                            "default": "#8C93AD"
+                                        },
+                                        {
+                                            "type": "color",
+                                            "label": "Star Color (filled)",
+                                            "id": "star_color_full",
+                                            "default": "#3C64F4"
+                                        },
+                                        {
+                                            "type": "color",
+                                            "label": "Star Color (empty)",
+                                            "id": "star_color_empty",
+                                            "default": "#ECEEF5"
+                                        }
+                                    ]
+                                }
+                            }
+                        }
+                    },
+                    {
+                        "type": "element",
+                        "label": "Button",
+                        "id": "product_button",
+                        "typeMeta": {
+                            "controls": {
+                                "visibility": {
+                                    "default": "hide"
+                                },
+                                "advanced": {
+                                    "label": "Button Style",
+                                    "settings": [
+                                        {
+                                            "type": "select",
+                                            "label": "Button Shape",
+                                            "id": "shape",
+                                            "default": "round",
+                                            "typeMeta": {
+                                                "selectOptions": [
+                                                    {
+                                                        "label": "Round",
+                                                        "value": "round"
+                                                    },
+                                                    {
+                                                        "label": "Square",
+                                                        "value": "square"
+                                                    },
+                                                    {
+                                                        "label": "Pill",
+                                                        "value": "pill"
+                                                    }
+                                                ]
+                                            }
+                                        },
+                                        {
+                                            "type": "color",
+                                            "label": "Button Color",
+                                            "id": "fill_color",
+                                            "default": "#444444"
+                                        },
+                                        {
+                                            "type": "color",
+                                            "label": "Text Color",
+                                            "id": "text_color",
+                                            "default": "#ffffff"
+                                        },
+                                        {
+                                            "type": "select",
+                                            "label": "Action",
+                                            "id": "action",
+                                            "default": "cart",
+                                            "typeMeta": {
+                                                "selectOptions": [
+                                                    {
+                                                        "label": "Add to Cart",
+                                                        "value": "cart"
+                                                    },
+                                                    {
+                                                        "label": "Add to Wishlist",
+                                                        "value": "wishlist"
+                                                    },
+                                                    {
+                                                        "label": "Go to Product Page",
+                                                        "value": "product"
+                                                    }
+                                                ]
+                                            }
+                                        }
+                                    ]
+                                }
+                            }
+                        }
+                    }
+                ]
+            },
+            {
+                "label": "Tailwind CSS",
+                "settings": [
+                    {
+                        "type": "input",
+                        "label": "Layout Attributes",
+                        "id": "tw_layout_attributes"
+                    }
+                ]
+            }
+        ]
+    }
+]
