@@ -73,3 +73,159 @@
 // -----------------------------------------------------------------------------
 
 @import 'layouts/layouts'; // 1
+
+/*Base*/
+:root {
+  --font-body-family: stencilFontFamily('body-font'), Arial, Helvetica,
+    sans-serif;
+  --font-body-style: normal;
+  --font-body-weight: 400;
+  --font-heading-family: stencilFontFamily('headings-font'), Arial, Helvetica,
+    sans-serif;
+  --font-heading-style: normal;
+  --font-heading-weight: 400;
+  --font-body-scale: 1;
+  --font-heading-scale: 1;
+}
+.media > *:not(.zoom):not(.deferred-media__poster-button),
+.media model-viewer {
+  display: block;
+  max-width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+.media > img {
+  object-fit: cover;
+  object-position: center center;
+  transition: opacity 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+.text-body {
+  font-size: 1.5rem;
+  letter-spacing: 0.06rem;
+  line-height: calc(1 + 0.8 / var(--font-body-scale));
+  font-family: var(--font-body-family);
+  font-style: var(--font-body-style);
+  font-weight: var(--font-body-weight);
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+.h0,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5 {
+  font-family: var(--font-heading-family);
+  font-style: var(--font-heading-style);
+  font-weight: var(--font-heading-weight);
+  letter-spacing: calc(var(--font-heading-scale) * 0.06rem);
+  line-height: calc(1 + 0.3/max (1, var(--font-heading-scale)));
+  word-break: break-word;
+}
+.hxl {
+  font-size: calc(var(--font-heading-scale) * 5rem);
+}
+@media only screen and (min-width: 750px) {
+  .hxl {
+    font-size: calc(var(--font-heading-scale) * 6.2rem);
+  }
+}
+.h0 {
+  font-size: calc(var(--font-heading-scale) * 4rem);
+}
+@media only screen and (min-width: 750px) {
+  .h0 {
+    font-size: calc(var(--font-heading-scale) * 5.2rem);
+  }
+}
+h1,
+.h1 {
+  font-size: calc(var(--font-heading-scale) * 3rem);
+}
+@media only screen and (min-width: 750px) {
+  h1,
+  .h1 {
+    font-size: calc(var(--font-heading-scale) * 4rem);
+  }
+}
+h2,
+.h2 {
+  font-size: calc(var(--font-heading-scale) * 2rem);
+}
+@media only screen and (min-width: 750px) {
+  h2,
+  .h2 {
+    font-size: calc(var(--font-heading-scale) * 2.4rem);
+  }
+}
+h3,
+.h3 {
+  font-size: calc(var(--font-heading-scale) * 1.7rem);
+}
+@media only screen and (min-width: 750px) {
+  h3,
+  .h3 {
+    font-size: calc(var(--font-heading-scale) * 1.8rem);
+  }
+}
+h4,
+.h4 {
+  font-family: var(--font-heading-family);
+  font-style: var(--font-heading-style);
+  font-size: calc(var(--font-heading-scale) * 1.5rem);
+}
+h5,
+.h5 {
+  font-size: calc(var(--font-heading-scale) * 1.2rem);
+}
+@media only screen and (min-width: 750px) {
+  h5,
+  .h5 {
+    font-size: calc(var(--font-heading-scale) * 1.3rem);
+  }
+}
+h6,
+.h6 {
+  margin-block-start: 1.67em;
+  margin-block-end: 1.67em;
+}
+blockquote {
+  font-style: italic;
+  border-left: 0.2rem solid;
+  padding-left: 1rem;
+}
+@media screen and (min-width: 750px) {
+  blockquote {
+    padding-left: 1.5rem;
+  }
+}
+.caption {
+  font-size: 1rem;
+  letter-spacing: 0.07rem;
+  line-height: calc(1 + 0.7 / var(--font-body-scale));
+}
+@media screen and (min-width: 750px) {
+  .caption {
+    font-size: 1.2rem;
+  }
+}
+.caption-with-letter-spacing {
+  font-size: 1rem;
+  letter-spacing: 0.13rem;
+  line-height: calc(1 + 0.2 / var(--font-body-scale));
+  text-transform: uppercase;
+}
+.caption-with-letter-spacing--medium {
+  font-size: 1.2rem;
+  letter-spacing: 0.16rem;
+}
+.caption-with-letter-spacing--large {
+  font-size: 1.4rem;
+  letter-spacing: 0.18rem;
+}
