@@ -13,8 +13,8 @@
           },
           {
             "type": "imageManager",
-            "label": "First Image",
-            "id": "first_image",
+            "label": "Image",
+            "id": "image",
             "default": {
               "src": "",
               "type": "IMAGE_MANAGER"
@@ -22,34 +22,11 @@
           },
           {
             "type": "input",
-            "label": "First Image alt text",
-            "id": "first_image_alt",
+            "label": "Image alt text",
+            "id": "image_alt",
             "typeMeta": {
               "placeholder": "Descriptive text of first image"
             }
-          },
-          {
-            "type": "imageManager",
-            "label": "Second Image",
-            "id": "second_image",
-            "default": {
-              "src": "",
-              "type": "IMAGE_MANAGER"
-            }
-          },
-          {
-            "type": "input",
-            "label": "Second Image alt text",
-            "id": "second_image_alt",
-            "typeMeta": {
-              "placeholder": "Descriptive text of second image"
-            }
-          },
-          {
-            "label": "Second Image display",
-            "type": "visibility",
-            "id": "second_image_visibility",
-            "default": "show"
           },
           {
             "type": "range",
@@ -69,24 +46,24 @@
             "type": "select",
             "label": "Banner height",
             "id": "banner_height",
-            "default": "max-w-full h-auto",
+            "default": "adapt",
             "typeMeta": {
               "selectOptions": [
                 {
                   "label": "Small",
-                  "value": "min-h-52"
+                  "value": "small"
                 },
                 {
                   "label": "Medium",
-                  "value": "min-h-72"
+                  "value": "medium"
                 },
                 {
                   "label": "Large",
-                  "value": "min-h-96"
+                  "value": "large"
                 },
                 {
                   "label": "Adapt to First Image",
-                  "value": "max-w-full h-auto"
+                  "value": "adapt"
                 }
               ]
             }
@@ -115,52 +92,199 @@
             }
           },
           {
-            "type": "boolean",
-            "label": "Show container on desktop",
-            "id": "show_container_desktop",
-            "default": "false"
+            "label": "Mobile content alignment",
+            "type": "alignment",
+            "id": "mobile_alignment",
+            "typeMeta": {
+              "display": "horizontal"
+            },
+            "default": {
+              "horizontal": "center"
+            }
           },
           {
-            "type": "boolean",
-            "label": "Stack images on mobile",
-            "id": "stack_mobile",
-            "default": "false"
+            "type": "color",
+            "label": "Container background color (requires HTML ID value above)",
+            "id": "container_bg_color",
+            "default": "transparent"
+          }
+        ]
+      },
+      {
+        "label": "Heading",
+        "settings": [
+          {
+            "type": "text",
+            "label": "Text",
+            "id": "heading_text"
           },
           {
-            "type": "boolean",
-            "label": "Show container on mobile",
-            "id": "show_container_mobile",
-            "default": "false"
-          },
-          {
-            "label": "Color scheme",
             "type": "select",
-            "id": "color_scheme",
+            "label": "Size",
+            "id": "heading_size",
+            "default": "h0",
             "typeMeta": {
               "selectOptions": [
                 {
-                  "label": "Accent 1",
-                  "value": "a1"
+                  "label": "Small",
+                  "value": "h2"
                 },
                 {
-                  "label": "Accent 2",
-                  "value": "a2"
+                  "label": "Medium",
+                  "value": "h1"
                 },
                 {
-                  "label": "Background 1",
-                  "value": "b1"
+                  "label": "Large",
+                  "value": "h0"
+                }
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "label": "Body",
+        "settings": [
+          {
+            "type": "text",
+            "label": "Text",
+            "id": "body_text"
+          },
+          {
+            "type": "select",
+            "label": "Style",
+            "id": "body_style",
+            "default": "body",
+            "typeMeta": {
+              "selectOptions": [
+                {
+                  "label": "Body",
+                  "value": "body"
                 },
                 {
-                  "label": "Background 2",
-                  "value": "b2"
+                  "label": "Subtitle",
+                  "value": "subtitle"
                 },
                 {
-                  "label": "Inverse",
-                  "value": "inverse"
+                  "label": "Uppercase",
+                  "value": "caption-with-letter-spacing"
+                }
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "label": "Button One",
+        "settings": [
+          {
+            "label": "Button Text",
+            "type": "input",
+            "id": "button_one_text"
+          },
+          {
+            "label": "Button Link",
+            "type": "input",
+            "id": "button_one_link",
+            "typeMeta": {
+              "placeholder": "/path/ or https://"
+            }
+          },
+          {
+            "label": "External Link",
+            "type": "boolean",
+            "id": "button_one_external",
+            "default": false
+          },
+          {
+            "label": "Button Color",
+            "type": "select",
+            "id": "button_one_color",
+            "typeMeta": {
+              "selectOptions": [
+                {
+                  "label": "Primary",
+                  "value": "primary"
+                },
+                {
+                  "label": "Secondary",
+                  "value": "secondary"
                 }
               ]
             },
-            "default": "a1"
+            "default": "primary"
+          }
+        ]
+      },
+      {
+        "label": "Button Two",
+        "settings": [
+          {
+            "label": "Button Text",
+            "type": "input",
+            "id": "button_two_text"
+          },
+          {
+            "label": "Button Link",
+            "type": "input",
+            "id": "button_two_link",
+            "typeMeta": {
+              "placeholder": "/path/ or https://"
+            }
+          },
+          {
+            "label": "External Link",
+            "type": "boolean",
+            "id": "button_two_external",
+            "default": false
+          },
+          {
+            "label": "Button Color",
+            "type": "select",
+            "id": "button_two_color",
+            "typeMeta": {
+              "selectOptions": [
+                {
+                  "label": "Primary",
+                  "value": "primary"
+                },
+                {
+                  "label": "Secondary",
+                  "value": "secondary"
+                }
+              ]
+            },
+            "default": "primary"
+          }
+        ]
+      },
+      {
+        "label": "TailwindCSS",
+        "settings": [
+          {
+            "type": "input",
+            "label": "TailwindCSS for Section",
+            "id": "twcss_section"
+          },
+          {
+            "type": "input",
+            "label": "TailwindCSS for Image",
+            "id": "twcss_image"
+          },
+          {
+            "type": "input",
+            "label": "TailwindCSS for Heading Text",
+            "id": "twcss_heading"
+          },
+          {
+            "type": "input",
+            "label": "TailwindCSS for Body Text",
+            "id": "twcss_body"
+          },
+          {
+            "type": "input",
+            "label": "TailwindCSS for Button",
+            "id": "twcss_button"
           }
         ]
       }
