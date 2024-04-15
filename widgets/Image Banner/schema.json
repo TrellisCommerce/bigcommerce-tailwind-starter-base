@@ -29,29 +29,6 @@
             }
           },
           {
-            "type": "imageManager",
-            "label": "Second Image",
-            "id": "second_image",
-            "default": {
-              "src": "",
-              "type": "IMAGE_MANAGER"
-            }
-          },
-          {
-            "type": "input",
-            "label": "Second Image alt text",
-            "id": "second_image_alt",
-            "typeMeta": {
-              "placeholder": "Descriptive text of second image"
-            }
-          },
-          {
-            "label": "Second Image display",
-            "type": "visibility",
-            "id": "second_image_visibility",
-            "default": "show"
-          },
-          {
             "type": "range",
             "label": "Image overlay opacity",
             "id": "image_overlay_opacity",
@@ -69,24 +46,24 @@
             "type": "select",
             "label": "Banner height",
             "id": "banner_height",
-            "default": "max-w-full h-auto",
+            "default": "adapt",
             "typeMeta": {
               "selectOptions": [
                 {
                   "label": "Small",
-                  "value": "min-h-52"
+                  "value": "small"
                 },
                 {
                   "label": "Medium",
-                  "value": "min-h-72"
+                  "value": "medium"
                 },
                 {
                   "label": "Large",
-                  "value": "min-h-96"
+                  "value": "large"
                 },
                 {
                   "label": "Adapt to First Image",
-                  "value": "max-w-full h-auto"
+                  "value": "adapt"
                 }
               ]
             }
@@ -115,22 +92,21 @@
             }
           },
           {
-            "type": "boolean",
-            "label": "Show container on desktop",
-            "id": "show_container_desktop",
-            "default": "false"
+            "label": "Mobile content alignment",
+            "type": "alignment",
+            "id": "mobile_alignment",
+            "typeMeta": {
+              "display": "horizontal"
+            },
+            "default": {
+              "horizontal": "center"
+            }
           },
           {
-            "type": "boolean",
-            "label": "Stack images on mobile",
-            "id": "stack_mobile",
-            "default": "false"
-          },
-          {
-            "type": "boolean",
-            "label": "Show container on mobile",
-            "id": "show_container_mobile",
-            "default": "false"
+            "type": "color",
+            "label": "Container background color",
+            "id": "container_bg_color",
+            "default": "transparent"
           }
         ]
       },
