@@ -13,8 +13,8 @@
           },
           {
             "type": "imageManager",
-            "label": "First Image",
-            "id": "first_image",
+            "label": "Image",
+            "id": "image",
             "default": {
               "src": "",
               "type": "IMAGE_MANAGER"
@@ -22,8 +22,8 @@
           },
           {
             "type": "input",
-            "label": "First Image alt text",
-            "id": "first_image_alt",
+            "label": "Image alt text",
+            "id": "image_alt",
             "typeMeta": {
               "placeholder": "Descriptive text of first image"
             }
@@ -104,7 +104,7 @@
           },
           {
             "type": "color",
-            "label": "Container background color",
+            "label": "Container background color (requires HTML ID value above)",
             "id": "container_bg_color",
             "default": "transparent"
           }
@@ -261,6 +261,16 @@
       {
         "label": "TailwindCSS",
         "settings": [
+          {
+            "type": "input",
+            "label": "TailwindCSS for Section",
+            "id": "twcss_section"
+          },
+          {
+            "type": "input",
+            "label": "TailwindCSS for Image",
+            "id": "twcss_image"
+          },
           {
             "type": "input",
             "label": "TailwindCSS for Heading Text",
