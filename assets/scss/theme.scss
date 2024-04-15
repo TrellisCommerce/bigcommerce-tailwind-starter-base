@@ -121,6 +121,47 @@
     font-size: calc(var(--font-heading-scale) * 5.2rem);
   }
 }
+.h1 {
+  font-size: calc(var(--font-heading-scale) * 3rem);
+}
+@media only screen and (min-width: 750px) {
+  .h1 {
+    font-size: calc(var(--font-heading-scale) * 4rem);
+  }
+}
+.h2 {
+  font-size: calc(var(--font-heading-scale) * 2rem);
+}
+@media only screen and (min-width: 750px) {
+  .h2 {
+    font-size: calc(var(--font-heading-scale) * 2.4rem);
+  }
+}
+.h3 {
+  font-size: calc(var(--font-heading-scale) * 1.7rem);
+}
+@media only screen and (min-width: 750px) {
+  .h3 {
+    font-size: calc(var(--font-heading-scale) * 1.8rem);
+  }
+}
+.h4 {
+  font-family: var(--font-heading-family);
+  font-style: var(--font-heading-style);
+  font-size: calc(var(--font-heading-scale) * 1.5rem);
+}
+.h5 {
+  font-size: calc(var(--font-heading-scale) * 1.2rem);
+}
+@media only screen and (min-width: 750px) {
+  .h5 {
+    font-size: calc(var(--font-heading-scale) * 1.3rem);
+  }
+}
+.h6 {
+  margin-block-start: 1.67em;
+  margin-block-end: 1.67em;
+}
 blockquote {
   font-style: italic;
   border-left: 0.2rem solid;
