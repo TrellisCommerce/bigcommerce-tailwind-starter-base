@@ -1,6 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  prefix: 'tw-',
+  prefix: 'twcss-',
   corePlugins: {
     backdropOpacity: false,
     backgroundOpacity: false,
@@ -10,7 +10,11 @@ module.exports = {
     ringOpacity: false,
     textOpacity: false,
   },
-  content: ['./templates/**/*.html'],
+  content: [
+    './templates/**/*.html',
+    './widgets/content.json',
+    './widgets/**/*.{html,json}',
+  ],
   presets: [],
   darkMode: 'media', // or 'class'
   theme: {

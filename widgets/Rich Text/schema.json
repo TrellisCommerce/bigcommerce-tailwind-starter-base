@@ -1,0 +1,236 @@
+[
+  {
+    "type": "tab",
+    "label": "RichText",
+    "sections": [
+      {
+        "label": "General",
+        "settings": [
+          {
+            "type": "input",
+            "label": "HTML ID",
+            "id": "html_id"
+          },
+          {
+            "type": "alignment",
+            "label": "Desktop content position",
+            "id": "desktop_content_pos",
+            "typeMeta": {
+              "display": "horizontal"
+            },
+            "default": {
+              "horizontal": "left"
+            }
+          },
+          {
+            "label": "Content alignment",
+            "type": "alignment",
+            "id": "alignment",
+            "typeMeta": {
+              "display": "horizontal"
+            },
+            "default": {
+              "horizontal": "center"
+            }
+          },
+          {
+            "type": "color",
+            "label": "Background color (requires HTML ID value above)",
+            "id": "bg_color",
+            "default": "transparent"
+          }
+        ]
+      },
+      {
+        "label": "Heading",
+        "settings": [
+          {
+            "type": "text",
+            "label": "Text",
+            "id": "heading_text",
+            "default": "Here is a Heading"
+          },
+          {
+            "type": "select",
+            "label": "Size",
+            "id": "heading_size",
+            "default": "h0",
+            "typeMeta": {
+              "selectOptions": [
+                {
+                  "label": "Small",
+                  "value": "h2"
+                },
+                {
+                  "label": "Medium",
+                  "value": "h1"
+                },
+                {
+                  "label": "Large",
+                  "value": "h0"
+                }
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "label": "Caption",
+        "settings": [
+          {
+            "type": "text",
+            "label": "Text",
+            "id": "caption_text",
+            "default": "Here is a caption"
+          },
+          {
+            "type": "select",
+            "label": "Style",
+            "id": "caption_style",
+            "default": "subtitle--medium",
+            "typeMeta": {
+              "selectOptions": [
+                {
+                  "label": "Subtitle",
+                  "value": "subtitle--medium"
+                },
+                {
+                  "label": "Uppercase",
+                  "value": "caption-with-letter-spacing--medium"
+                }
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "label": "Text",
+        "settings": [
+          {
+            "type": "code",
+            "label": "Text",
+            "id": "body_text",
+            "default": "<p>Here is some <strong>body</strong> text.</p><ul><li>List item 1</li><li>List item 2</li></ul>",
+            "typeMeta": {
+              "language": "html"
+            }
+          }
+        ]
+      },
+      {
+        "label": "Button One",
+        "settings": [
+          {
+            "label": "Button Text",
+            "type": "input",
+            "id": "button_one_text"
+          },
+          {
+            "label": "Button Link",
+            "type": "input",
+            "id": "button_one_link",
+            "typeMeta": {
+              "placeholder": "/path/ or https://"
+            }
+          },
+          {
+            "label": "External Link",
+            "type": "boolean",
+            "id": "button_one_external",
+            "default": false
+          },
+          {
+            "label": "Button Color",
+            "type": "select",
+            "id": "button_one_color",
+            "typeMeta": {
+              "selectOptions": [
+                {
+                  "label": "Primary",
+                  "value": "primary"
+                },
+                {
+                  "label": "Secondary",
+                  "value": "secondary"
+                }
+              ]
+            },
+            "default": "primary"
+          }
+        ]
+      },
+      {
+        "label": "Button Two",
+        "settings": [
+          {
+            "label": "Button Text",
+            "type": "input",
+            "id": "button_two_text"
+          },
+          {
+            "label": "Button Link",
+            "type": "input",
+            "id": "button_two_link",
+            "typeMeta": {
+              "placeholder": "/path/ or https://"
+            }
+          },
+          {
+            "label": "External Link",
+            "type": "boolean",
+            "id": "button_two_external",
+            "default": false
+          },
+          {
+            "label": "Button Color",
+            "type": "select",
+            "id": "button_two_color",
+            "typeMeta": {
+              "selectOptions": [
+                {
+                  "label": "Primary",
+                  "value": "primary"
+                },
+                {
+                  "label": "Secondary",
+                  "value": "secondary"
+                }
+              ]
+            },
+            "default": "primary"
+          }
+        ]
+      },
+      {
+        "label": "Tailwind CSS",
+        "settings": [
+          {
+            "type": "input",
+            "label": "Tailwind CSS for Section",
+            "id": "twcss_section"
+          },
+          {
+            "type": "input",
+            "label": "Tailwind CSS for Heading",
+            "id": "twcss_heading"
+          },
+          {
+            "type": "input",
+            "label": "Tailwind CSS for Text",
+            "id": "twcss_body"
+          },
+          {
+            "type": "input",
+            "label": "Tailwind CSS for Caption",
+            "id": "twcss_caption"
+          },
+          {
+            "type": "input",
+            "label": "Tailwind CSS for Button",
+            "id": "twcss_button"
+          }
+        ]
+      }
+    ]
+  }
+]

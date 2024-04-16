@@ -1,0 +1,295 @@
+[
+  {
+    "type": "tab",
+    "label": "Image Banner",
+    "sections": [
+      {
+        "label": "General",
+        "settings": [
+          {
+            "type": "input",
+            "label": "HTML ID",
+            "id": "html_id"
+          },
+          {
+            "type": "imageManager",
+            "label": "Image",
+            "id": "image",
+            "default": {
+              "src": "https://images.unsplash.com/photo-1487700160041-babef9c3cb55?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2000&q=80",
+              "type": "IMAGE_MANAGER"
+            }
+          },
+          {
+            "type": "input",
+            "label": "Image alt text",
+            "id": "image_alt",
+            "typeMeta": {
+              "placeholder": "Descriptive text of first image"
+            }
+          },
+          {
+            "type": "range",
+            "label": "Image overlay opacity",
+            "id": "image_overlay_opacity",
+            "default": "0",
+            "typeMeta": {
+              "rangeValues": {
+                "min": "0",
+                "max": "100",
+                "step": "10",
+                "unit": "%"
+              }
+            }
+          },
+          {
+            "type": "select",
+            "label": "Banner height",
+            "id": "banner_height",
+            "default": "adapt",
+            "typeMeta": {
+              "selectOptions": [
+                {
+                  "label": "Small",
+                  "value": "small"
+                },
+                {
+                  "label": "Medium",
+                  "value": "medium"
+                },
+                {
+                  "label": "Large",
+                  "value": "large"
+                },
+                {
+                  "label": "Adapt to First Image",
+                  "value": "adapt"
+                }
+              ]
+            }
+          },
+          {
+            "type": "alignment",
+            "label": "Desktop content position",
+            "id": "desktop_content_pos",
+            "typeMeta": {
+              "display": "both"
+            },
+            "default": {
+              "horizontal": "center",
+              "vertical": "middle"
+            }
+          },
+          {
+            "label": "Desktop content alignment",
+            "type": "alignment",
+            "id": "desktop_alignment",
+            "typeMeta": {
+              "display": "horizontal"
+            },
+            "default": {
+              "horizontal": "center"
+            }
+          },
+          {
+            "label": "Mobile content alignment",
+            "type": "alignment",
+            "id": "mobile_alignment",
+            "typeMeta": {
+              "display": "horizontal"
+            },
+            "default": {
+              "horizontal": "center"
+            }
+          },
+          {
+            "type": "color",
+            "label": "Container background color (requires HTML ID value above)",
+            "id": "container_bg_color",
+            "default": "transparent"
+          }
+        ]
+      },
+      {
+        "label": "Heading",
+        "settings": [
+          {
+            "type": "text",
+            "label": "Text",
+            "id": "heading_text",
+            "default": "Here is a Heading"
+          },
+          {
+            "type": "select",
+            "label": "Size",
+            "id": "heading_size",
+            "default": "h0",
+            "typeMeta": {
+              "selectOptions": [
+                {
+                  "label": "Small",
+                  "value": "h2"
+                },
+                {
+                  "label": "Medium",
+                  "value": "h1"
+                },
+                {
+                  "label": "Large",
+                  "value": "h0"
+                }
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "label": "Text",
+        "settings": [
+          {
+            "type": "text",
+            "label": "Text",
+            "id": "body_text",
+            "default": "Here is some body text."
+          },
+          {
+            "type": "select",
+            "label": "Style",
+            "id": "body_style",
+            "default": "body",
+            "typeMeta": {
+              "selectOptions": [
+                {
+                  "label": "Body",
+                  "value": "body"
+                },
+                {
+                  "label": "Subtitle",
+                  "value": "subtitle"
+                },
+                {
+                  "label": "Uppercase",
+                  "value": "caption-with-letter-spacing"
+                }
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "label": "Button One",
+        "settings": [
+          {
+            "label": "Button Text",
+            "type": "input",
+            "id": "button_one_text"
+          },
+          {
+            "label": "Button Link",
+            "type": "input",
+            "id": "button_one_link",
+            "typeMeta": {
+              "placeholder": "/path/ or https://"
+            }
+          },
+          {
+            "label": "External Link",
+            "type": "boolean",
+            "id": "button_one_external",
+            "default": false
+          },
+          {
+            "label": "Button Color",
+            "type": "select",
+            "id": "button_one_color",
+            "typeMeta": {
+              "selectOptions": [
+                {
+                  "label": "Primary",
+                  "value": "primary"
+                },
+                {
+                  "label": "Secondary",
+                  "value": "secondary"
+                }
+              ]
+            },
+            "default": "primary"
+          }
+        ]
+      },
+      {
+        "label": "Button Two",
+        "settings": [
+          {
+            "label": "Button Text",
+            "type": "input",
+            "id": "button_two_text"
+          },
+          {
+            "label": "Button Link",
+            "type": "input",
+            "id": "button_two_link",
+            "typeMeta": {
+              "placeholder": "/path/ or https://"
+            }
+          },
+          {
+            "label": "External Link",
+            "type": "boolean",
+            "id": "button_two_external",
+            "default": false
+          },
+          {
+            "label": "Button Color",
+            "type": "select",
+            "id": "button_two_color",
+            "typeMeta": {
+              "selectOptions": [
+                {
+                  "label": "Primary",
+                  "value": "primary"
+                },
+                {
+                  "label": "Secondary",
+                  "value": "secondary"
+                }
+              ]
+            },
+            "default": "primary"
+          }
+        ]
+      },
+      {
+        "label": "Tailwind CSS",
+        "settings": [
+          {
+            "type": "input",
+            "label": "Tailwind CSS for Section",
+            "id": "twcss_section"
+          },
+          {
+            "type": "input",
+            "label": "Tailwind CSS for Image",
+            "id": "twcss_image"
+          },
+          {
+            "type": "input",
+            "label": "Tailwind CSS for Heading",
+            "id": "twcss_heading"
+          },
+          {
+            "type": "input",
+            "label": "Tailwind CSS for Text",
+            "id": "twcss_body"
+          },
+          {
+            "type": "input",
+            "label": "Tailwind CSS for Button",
+            "id": "twcss_button"
+          }
+        ]
+      }
+    ]
+  }
+]
