@@ -7,6 +7,11 @@
         "label": "General",
         "settings": [
           {
+            "type": "input",
+            "label": "HTML ID",
+            "id": "html_id"
+          },
+          {
             "type": "alignment",
             "label": "Desktop content position",
             "id": "desktop_content_pos",
@@ -27,6 +32,12 @@
             "default": {
               "horizontal": "center"
             }
+          },
+          {
+            "type": "color",
+            "label": "Background color (requires HTML ID value above)",
+            "id": "bg_color",
+            "default": "transparent"
           }
         ]
       },
