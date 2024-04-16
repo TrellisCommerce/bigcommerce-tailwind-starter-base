@@ -1,7 +1,7 @@
 [
   {
     "type": "tab",
-    "label": "Image Banner",
+    "label": "RichText",
     "sections": [
       {
         "label": "General",
@@ -12,89 +12,20 @@
             "id": "html_id"
           },
           {
-            "type": "imageManager",
-            "label": "Image",
-            "id": "image",
-            "default": {
-              "src": "https://images.unsplash.com/photo-1487700160041-babef9c3cb55?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2000&q=80",
-              "type": "IMAGE_MANAGER"
-            }
-          },
-          {
-            "type": "input",
-            "label": "Image alt text",
-            "id": "image_alt",
-            "typeMeta": {
-              "placeholder": "Descriptive text of first image"
-            }
-          },
-          {
-            "type": "range",
-            "label": "Image overlay opacity",
-            "id": "image_overlay_opacity",
-            "default": "0",
-            "typeMeta": {
-              "rangeValues": {
-                "min": "0",
-                "max": "100",
-                "step": "10",
-                "unit": "%"
-              }
-            }
-          },
-          {
-            "type": "select",
-            "label": "Banner height",
-            "id": "banner_height",
-            "default": "adapt",
-            "typeMeta": {
-              "selectOptions": [
-                {
-                  "label": "Small",
-                  "value": "small"
-                },
-                {
-                  "label": "Medium",
-                  "value": "medium"
-                },
-                {
-                  "label": "Large",
-                  "value": "large"
-                },
-                {
-                  "label": "Adapt to First Image",
-                  "value": "adapt"
-                }
-              ]
-            }
-          },
-          {
             "type": "alignment",
             "label": "Desktop content position",
             "id": "desktop_content_pos",
             "typeMeta": {
-              "display": "both"
-            },
-            "default": {
-              "horizontal": "center",
-              "vertical": "middle"
-            }
-          },
-          {
-            "label": "Desktop content alignment",
-            "type": "alignment",
-            "id": "desktop_alignment",
-            "typeMeta": {
               "display": "horizontal"
             },
             "default": {
-              "horizontal": "center"
+              "horizontal": "left"
             }
           },
           {
-            "label": "Mobile content alignment",
+            "label": "Content alignment",
             "type": "alignment",
-            "id": "mobile_alignment",
+            "id": "alignment",
             "typeMeta": {
               "display": "horizontal"
             },
@@ -104,8 +35,8 @@
           },
           {
             "type": "color",
-            "label": "Container background color (requires HTML ID value above)",
-            "id": "container_bg_color",
+            "label": "Background color (requires HTML ID value above)",
+            "id": "bg_color",
             "default": "transparent"
           }
         ]
@@ -144,34 +75,44 @@
         ]
       },
       {
-        "label": "Text",
+        "label": "Caption",
         "settings": [
           {
             "type": "text",
             "label": "Text",
-            "id": "body_text",
-            "default": "Here is some body text."
+            "id": "caption_text",
+            "default": "Here is a caption"
           },
           {
             "type": "select",
             "label": "Style",
-            "id": "body_style",
-            "default": "body",
+            "id": "caption_style",
+            "default": "subtitle--medium",
             "typeMeta": {
               "selectOptions": [
                 {
-                  "label": "Body",
-                  "value": "body"
-                },
-                {
                   "label": "Subtitle",
-                  "value": "subtitle"
+                  "value": "subtitle--medium"
                 },
                 {
                   "label": "Uppercase",
-                  "value": "caption-with-letter-spacing"
+                  "value": "caption-with-letter-spacing--medium"
                 }
               ]
+            }
+          }
+        ]
+      },
+      {
+        "label": "Text",
+        "settings": [
+          {
+            "type": "code",
+            "label": "Text",
+            "id": "body_text",
+            "default": "<p>Here is some <strong>body</strong> text.</p><ul><li>List item 1</li><li>List item 2</li></ul>",
+            "typeMeta": {
+              "language": "html"
             }
           }
         ]
@@ -270,11 +211,6 @@
           },
           {
             "type": "input",
-            "label": "Tailwind CSS for Image",
-            "id": "twcss_image"
-          },
-          {
-            "type": "input",
             "label": "Tailwind CSS for Heading",
             "id": "twcss_heading"
           },
@@ -282,6 +218,11 @@
             "type": "input",
             "label": "Tailwind CSS for Text",
             "id": "twcss_body"
+          },
+          {
+            "type": "input",
+            "label": "Tailwind CSS for Caption",
+            "id": "twcss_caption"
           },
           {
             "type": "input",
