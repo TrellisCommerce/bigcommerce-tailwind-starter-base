@@ -1,0 +1,17 @@
+query Product($productId: Int = 1) {
+  site {
+    product(entityId: $productId) {
+      name
+      entityId
+      prices {
+        price {
+          currencyCode
+          value
+        }
+      }
+      defaultImage {
+        url(width: 500, height: 500)
+      }
+    }
+  }
+}

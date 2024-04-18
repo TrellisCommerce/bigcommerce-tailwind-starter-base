@@ -1,0 +1,182 @@
+<section class="gradient {{this.twcss_section}}">
+  <div{{#if html_id}} id="{{this.html_id}}" {{/if}} class="page-width">
+    <div
+      class="featured-product product product--medium grid grid--1-col gradient product--left isolate grid--2-col-tablet">
+      <div class="grid__item product__media-wrapper">
+        <img src="{{_.data.site.product.defaultImage.url}}" class="lazyload {{this.twcss_image}}" width="2400" height="3600" sizes="100vw"
+          fetchpriority="high" alt="{{#if this.image_alt}}{{this.image_alt}}{{else}}{{_.data.site.product.name}}{{/if}}" />
+      </div>
+      <div class="product__info-wrapper grid__item scroll-trigger animate--slide-in">
+        <product-info class="product__info-container">
+          <p class="product__text inline-richtext">Want to see some more examples? Head on over to a collection or product page!</p>
+          <p class="product__text inline-richtext caption-with-letter-spacing">Snowboard Vendor</p>
+          <h2 class="product__title h1">
+            {{_.data.site.product.name}}
+          </h2>
+          <div role="status">
+            <div class="price price--show-badge">
+              <div class="price__container">
+                <div class="price__regular"><span class="visually-hidden visually-hidden--inline">Regular price</span>
+                  <span class="price-item price-item--regular">
+                    {{_.data.site.product.prices.price.value}}
+                  </span>
+                </div>
+                <div class="price__sale">
+                  <span class="visually-hidden visually-hidden--inline">Regular price</span>
+                  <span>
+                    <s class="price-item price-item--regular"></s>
+                  </span><span class="visually-hidden visually-hidden--inline">Sale price</span>
+                  <span class="price-item price-item--sale price-item--last">
+                    $699.95 USD
+                  </span>
+                </div>
+                <small class="unit-price caption hidden">
+                  <span class="visually-hidden">Unit price</span>
+                  <span class="price-item price-item--last">
+                    <span></span>
+                    <span aria-hidden="true">/</span>
+                    <span class="visually-hidden">&nbsp;per&nbsp;</span>
+                    <span>
+                    </span>
+                  </span>
+                </small>
+              </div><span class="badge price__badge-sale">
+                Sale
+              </span>
+
+              <span class="badge price__badge-sold-out">
+                Sold out
+              </span>
+            </div>
+          </div>
+          <div>
+            <form method="post" action="/cart/add" accept-charset="UTF-8"
+              class="shopify-product-form" enctype="multipart/form-data"><input type="hidden" name="form_type"
+                value="product"><input type="hidden" name="utf8" value="✓"><input type="hidden" name="id"
+                value="45032363753781">
+
+              <input type="hidden" name="product-id" value="8280853119285"><input type="hidden" name="section-id"
+                value="template--22510246494517__featured_product_TaWKNi">
+            </form>
+          </div>
+          <div class="product-form__input product-form__quantity">
+            <label class="quantity__label form__label" for="Quantity-template--22510246494517__featured_product_TaWKNi">
+              Quantity
+              <span class="quantity__rules-cart hidden">
+                <link
+                  href="//tailwind-starter-plus-admin-fields.myshopify.com/cdn/shop/t/16/assets/component-loading-spinner.css?v=116724955567955766481711647721"
+                  rel="stylesheet" type="text/css" media="all">
+                <div class="loading__spinner hidden">
+                  <svg aria-hidden="true" focusable="false" class="spinner  " viewBox="0 0 66 66"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <circle class="path" fill="none" stroke-width="6" cx="33" cy="33" r="30"></circle>
+                  </svg>
+                </div>
+                <span>(<span class="quantity-cart">0</span> in cart)</span>
+              </span>
+            </label>
+            <div class="price-per-item__container">
+              <quantity-input class="quantity">
+                <button class="quantity__button disabled" name="minus" type="button">
+                  <span class="visually-hidden">Decrease quantity for The Complete Snowboard</span>
+                  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" class="icon icon-minus"
+                    fill="none" viewBox="0 0 10 2">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                      d="M.5 1C.5.7.7.5 1 .5h8a.5.5 0 110 1H1A.5.5 0 01.5 1z" fill="currentColor">
+                    </path>
+                  </svg>
+                </button>
+                <input class="quantity__input" type="number" name="quantity" data-cart-quantity="0" data-min="1" min="1"
+                  step="1" value="1" form="product-form-template--22510246494517__featured_product_TaWKNi">
+                <button class="quantity__button " name="plus" type="button">
+                  <span class="visually-hidden">Increase quantity for The Complete Snowboard</span>
+                  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" class="icon icon-plus"
+                    fill="none" viewBox="0 0 10 10">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                      d="M1 4.51a.5.5 0 000 1h3.5l.01 3.5a.5.5 0 001-.01V5.5l3.5-.01a.5.5 0 00-.01-1H5.5L5.49.99a.5.5 0 00-1 .01v3.5l-3.5.01H1z"
+                      fill="currentColor">
+                    </path>
+                  </svg>
+                </button>
+              </quantity-input>
+            </div>
+            <div class="quantity__rules caption">
+            </div>
+          </div>
+          <div><product-form class="product-form" data-hide-errors="false">
+              <div class="product-form__error-message-wrapper" role="alert" hidden="">
+                <svg aria-hidden="true" focusable="false" class="icon icon-error" viewBox="0 0 13 13">
+                  <circle cx="6.5" cy="6.50049" r="5.5" stroke="white" stroke-width="2"></circle>
+                  <circle cx="6.5" cy="6.5" r="5.5" fill="#EB001B" stroke="#EB001B" stroke-width="0.7"></circle>
+                  <path
+                    d="M5.87413 3.52832L5.97439 7.57216H7.02713L7.12739 3.52832H5.87413ZM6.50076 9.66091C6.88091 9.66091 7.18169 9.37267 7.18169 9.00504C7.18169 8.63742 6.88091 8.34917 6.50076 8.34917C6.12061 8.34917 5.81982 8.63742 5.81982 9.00504C5.81982 9.37267 6.12061 9.66091 6.50076 9.66091Z"
+                    fill="white"></path>
+                  <path
+                    d="M5.87413 3.17832H5.51535L5.52424 3.537L5.6245 7.58083L5.63296 7.92216H5.97439H7.02713H7.36856L7.37702 7.58083L7.47728 3.537L7.48617 3.17832H7.12739H5.87413ZM6.50076 10.0109C7.06121 10.0109 7.5317 9.57872 7.5317 9.00504C7.5317 8.43137 7.06121 7.99918 6.50076 7.99918C5.94031 7.99918 5.46982 8.43137 5.46982 9.00504C5.46982 9.57872 5.94031 10.0109 6.50076 10.0109Z"
+                    fill="white" stroke="#EB001B" stroke-width="0.7">
+                  </path>
+                </svg>
+                <span class="product-form__error-message"></span>
+              </div>
+              <form method="post" action="/cart/add" accept-charset="UTF-8" class="form" enctype="multipart/form-data" novalidate="novalidate"
+                data-type="add-to-cart-form"><input type="hidden" name="form_type" value="product"><input type="hidden"
+                  name="utf8" value="✓"><input type="hidden" name="id" value="45032363753781"
+                  class="product-variant-id">
+                <div class="product-form__buttons"><button type="submit" name="add"
+                    class="product-form__submit button button--full-width button--secondary">
+                    <span>Add to cart
+                    </span>
+
+                    <link
+                      href="//tailwind-starter-plus-admin-fields.myshopify.com/cdn/shop/t/16/assets/component-loading-spinner.css?v=116724955567955766481711647721"
+                      rel="stylesheet" type="text/css" media="all">
+
+                    <div class="loading__spinner hidden">
+                      <svg aria-hidden="true" focusable="false" class="spinner  " viewBox="0 0 66 66"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <circle class="path" fill="none" stroke-width="6" cx="33" cy="33" r="30"></circle>
+                      </svg>
+                    </div>
+                  </button>
+                  <div data-shopify="payment-button" data-has-selling-plan="false" data-has-fixed-selling-plan="false"
+                    data-customer-accounts-required="false" class="shopify-payment-button">
+                    <div>
+                      <div>
+                        <div>
+                          <button type="button"
+                            class="shopify-payment-button__button shopify-payment-button__button--unbranded">Buy it now</button><button aria-disabled="true"
+                            aria-hidden="true"
+                            class="shopify-payment-button__more-options shopify-payment-button__button--hidden"
+                            type="button">More payment options</button>
+                          <div>
+                            <div></div>
+                          </div>
+                          <div></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div><input type="hidden" name="product-id" value="8280853119285"><input type="hidden"
+                  name="section-id" value="template--22510246494517__featured_product_TaWKNi">
+              </form>
+            </product-form></div>
+
+          <a href="/products/the-complete-snowboard" class="link product__view-details animate-arrow">
+            View full details
+            <svg viewBox="0 0 14 10" fill="none" aria-hidden="true" focusable="false" class="icon icon-arrow"
+              xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M8.537.808a.5.5 0 01.817-.162l4 4a.5.5 0 010 .708l-4 4a.5.5 0 11-.708-.708L11.793 5.5H1a.5.5 0 010-1h10.793L8.646 1.354a.5.5 0 01-.109-.546z"
+                fill="currentColor">
+              </path>
+            </svg>
+          </a>
+        </product-info>
+      </div>
+    </div>
+    </div>
+</section>
+<style>
+  /*Widget*/
+  .featured-product .product__media-list{width:100%;margin:0;padding-bottom:0}.featured-product .product-media-container{margin-bottom:var(--media-shadow-vertical-offset);max-width:100%}.featured-product .product__media-item{padding-left:0}.featured-product .placeholder-svg{display:block;height:auto;width:100%}.background-secondary .featured-product{padding:2.5rem}.featured-product .share-button:nth-last-child(2){display:inline-flex}.share-button+.product__view-details{display:inline-flex;float:right;align-items:center;min-height:4.4rem}.share-button+.product__view-details:after{content:"";clear:both;display:table}@media screen and (min-width: 750px){.featured-product .product__media-item{padding-bottom:0}.background-secondary .featured-product{padding:5rem}.product--right .product__media-wrapper{order:2}}@media screen and (min-width: 990px){.background-secondary .featured-product:not(.product--no-media)>.product__info-wrapper{padding:0 0 0 5rem}.background-secondary .featured-product:not(.product--no-media).product--right>.product__info-wrapper{padding:0 5rem 0 0}.featured-product:not(.product--no-media)>.product__info-wrapper{padding:0 7rem}.background-secondary .featured-product{padding:6rem 7rem;position:relative;z-index:1}}
+</style>
