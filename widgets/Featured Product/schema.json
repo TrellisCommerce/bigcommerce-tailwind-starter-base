@@ -42,6 +42,28 @@
           },
           {
             "type": "select",
+            "label": "Desktop media width",
+            "id": "desktop_media_width",
+            "default": "medium",
+            "typeMeta": {
+              "selectOptions": [
+                {
+                  "label": "Small",
+                  "value": "small"
+                },
+                {
+                  "label": "Medium",
+                  "value": "medium"
+                },
+                {
+                  "label": "Large",
+                  "value": "large"
+                }
+              ]
+            }
+          },
+          {
+            "type": "select",
             "label": "Desktop media position",
             "id": "desktop_media_pos",
             "typeMeta": {
@@ -86,11 +108,6 @@
             "type": "input",
             "label": "Tailwind CSS for Text",
             "id": "twcss_body"
-          },
-          {
-            "type": "input",
-            "label": "Tailwind CSS for SKU",
-            "id": "twcss_sku"
           },
           {
             "type": "input",
