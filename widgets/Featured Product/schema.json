@@ -1,0 +1,127 @@
+[
+  {
+    "type": "hidden",
+    "settings": [
+      {
+        "type": "graphQl",
+        "id": "graphQueries",
+        "typeMeta": {
+          "mappings": {
+            "productId": {
+              "reads": "productId",
+              "type": "Int!"
+            }
+          }
+        }
+      }
+    ]
+  },
+  {
+    "type": "tab",
+    "label": "Featured Product",
+    "sections": [
+      {
+        "label": "General",
+        "settings": [
+          {
+            "type": "input",
+            "label": "HTML ID",
+            "id": "html_id"
+          },
+          {
+            "type": "productId",
+            "label": "Product ID",
+            "id": "productId",
+            "default": "80"
+          },
+          {
+            "type": "color",
+            "label": "Secondary background color (requires HTML ID value above)",
+            "id": "secondary_bg_color",
+            "default": "transparent"
+          },
+          {
+            "type": "select",
+            "label": "Desktop media width",
+            "id": "desktop_media_width",
+            "default": "medium",
+            "typeMeta": {
+              "selectOptions": [
+                {
+                  "label": "Small",
+                  "value": "small"
+                },
+                {
+                  "label": "Medium",
+                  "value": "medium"
+                },
+                {
+                  "label": "Large",
+                  "value": "large"
+                }
+              ]
+            }
+          },
+          {
+            "type": "select",
+            "label": "Desktop media position",
+            "id": "desktop_media_pos",
+            "typeMeta": {
+              "selectOptions": [
+                {
+                  "label": "Left",
+                  "value": "left"
+                },
+                {
+                  "label": "Right",
+                  "value": "right"
+                }
+              ]
+            }
+          },
+          {
+            "type": "text",
+            "label": "Text",
+            "id": "text",
+            "default": "Here is some product text."
+          }
+        ]
+      },
+      {
+        "label": "Tailwind CSS",
+        "settings": [
+          {
+            "type": "input",
+            "label": "Tailwind CSS for Section",
+            "id": "twcss_section"
+          },
+          {
+            "type": "input",
+            "label": "Tailwind CSS for Image",
+            "id": "twcss_image"
+          },
+          {
+            "type": "input",
+            "label": "Tailwind CSS for Title",
+            "id": "twcss_title"
+          },
+          {
+            "type": "input",
+            "label": "Tailwind CSS for Price",
+            "id": "twcss_price"
+          },
+          {
+            "type": "input",
+            "label": "Tailwind CSS for Text",
+            "id": "twcss_body"
+          },
+          {
+            "type": "input",
+            "label": "Tailwind CSS for Button",
+            "id": "twcss_button"
+          }
+        ]
+      }
+    ]
+  }
+]
