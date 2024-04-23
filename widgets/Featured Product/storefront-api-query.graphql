@@ -8,9 +8,21 @@ query Product($productId: Int = 1) {
           currencyCode
           value
         }
+        basePrice {
+          currencyCode
+          value
+        }
+        salePrice {
+          currencyCode
+          value
+        }
       }
       defaultImage {
         url(width: 500, height: 500)
+      }
+      path
+      brand {
+        name
       }
     }
   }

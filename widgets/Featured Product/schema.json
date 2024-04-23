@@ -78,6 +78,12 @@
                 }
               ]
             }
+          },
+          {
+            "type": "text",
+            "label": "Text",
+            "id": "text",
+            "default": "Here is some product text."
           }
         ]
       },
@@ -113,21 +119,6 @@
             "type": "input",
             "label": "Tailwind CSS for Button",
             "id": "twcss_button"
-          },
-          {
-            "type": "input",
-            "label": "Tailwind CSS for Input Label",
-            "id": "twcss_input_label"
-          },
-          {
-            "type": "input",
-            "label": "Tailwind CSS for Input",
-            "id": "twcss_input"
-          },
-          {
-            "type": "input",
-            "label": "Tailwind CSS for Quantity Button",
-            "id": "twcss_button_qty"
           }
         ]
       }
