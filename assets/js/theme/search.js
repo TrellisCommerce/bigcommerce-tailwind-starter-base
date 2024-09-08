@@ -1,10 +1,10 @@
 import { hooks } from '@bigcommerce/stencil-utils';
-import Url from 'url';
 import CatalogPage from './catalog';
 import FacetedSearch from './common/faceted-search';
 import { announceInputErrorMessage } from './common/utils/form-utils';
 import compareProducts from './global/compare-products';
 import urlUtils from './common/utils/url-utils';
+import Url from 'url';
 import collapsibleFactory from './common/collapsible';
 import 'jstree';
 import nod from './common/nod';
@@ -142,7 +142,7 @@ export default class Search extends CatalogPage {
         break;
     }
 
-    $($tabsCollection.get(nextTabIdx)).focus().trigger('click');
+    $($tabsCollection.get(nextTabIdx)).trigger('focus').trigger('click');
   }
 
   onReady() {
@@ -231,7 +231,7 @@ export default class Search extends CatalogPage {
             aria-live="polite"
             >${this.context.searchResultsCount}</p>`).prependTo('body');
 
-    setTimeout(() => $searchResultsMessage.focus(), 100);
+    setTimeout(() => $searchResultsMessage.trigger('focus'), 100);
   }
 
   loadTreeNodes(node, cb) {

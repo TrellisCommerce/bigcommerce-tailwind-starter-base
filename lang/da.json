@@ -141,8 +141,10 @@
         "store_credit": "Du har <strong>{store_credit}</strong> i butikskredit. For at bruge den skal du blot afgive din ordre. Du vil kunne vælge butikskredit som betalingsmetode, når det er tid til at betale for din ordre.",
         "store_credit_overview": "{credit} butikskredit",
         "generic_error": "Ups! Noget gik galt.",
-        "currency": "Vælg valuta: {code}",
+        "currency": "Valuta: {code}",
         "currency_switch_promotion": "Kampagner og gavekort, der ikke gælder for den nye valuta, fjernes fra din indkøbskurv. Er du sikker på, at du vil fortsætte?",
+        "channel": "Butik: {code}",
+        "channel_switch_warning": "Advarselstekst til butiksskift",
         "newsletter_signup": "Tilmeld dig vores nyhedsbrev",
         "form_submit": "Indsend",
         "no_preference": "Ingen præference",
@@ -181,6 +183,7 @@
         "paginator": {
             "page_of": "Side {current} af {total}"
         },
+        "pagination": "sideopsætning",
         "prices_are_in": "Priserne er i {CODE}",
         "previous": "Foregående",
         "next": "Næste",
@@ -225,6 +228,7 @@
     },
     "category": {
         "label": "Kategorier",
+        "product_label": "Filtrerede produkter",
         "shop_by_price": "Køb efter pris",
         "shop_by_price_range_aria": "Prisinterval fra {from} til {to}",
         "filter_price_range": "Prisinterval:",
@@ -400,6 +404,7 @@
             "credit_card_number": "Kreditkortnummer",
             "expiration": "Udløb",
             "cvv": "CVV",
+            "payment_icons_label": "Betalingsikoner",
             "card_types": {
                 "american_express": "American Express",
                 "credit_card": "Kreditkort",
@@ -413,6 +418,7 @@
                 "visa": "Visa"
             },
             "ach": "ACH",
+            "sepa_direct_debit": "SEPA Direct Debit",
             "paypal": "PayPal",
             "billing_address_labels": {
                 "address_line_1": "Adresselinje 1",
@@ -869,6 +875,7 @@
         "faceted": {
             "selected": {
                 "title": "Indsnævr efter",
+                "facet-label": "Anvendte filtre",
                 "rating-label": "Bedømt {rating, plural, one {# stjerne} other {# stjerner}} eller flere",
                 "no-filters": "Ingen filtre anvendt",
                 "clear-all": "Ryd alle"
@@ -876,11 +883,14 @@
             "range": {
                 "update": "Opdater",
                 "min-placeholder": "Min.",
-                "max-placeholder": "Maks."
+                "max-placeholder": "Maks.",
+                "min-description": "Indtast den minimumpris, som produkternes skal filtreres efter",
+                "max-description": "Indtast den maksimumpris, som produkternes skal filtreres efter"
             },
             "rating": {
                 "and-up": "og op"
             },
+            "label": "Følgende tekstfelt filtrerer de resultater, der følger, mens du skriver",
             "toggleSection": "Skift {title} filterafsnit",
             "clear": "Ryd",
             "more": "Mere",

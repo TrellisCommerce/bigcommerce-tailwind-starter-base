@@ -21,7 +21,7 @@ export default class Category extends CatalogPage {
     if (!$('[data-shop-by-price]').length) return;
 
     if ($('.navList-action').hasClass('is-active')) {
-      $('a.navList-action.is-active').focus();
+      $('a.navList-action.is-active').trigger('focus');
     }
 
     $('a.navList-action').on('click', () =>
@@ -79,7 +79,7 @@ export default class Category extends CatalogPage {
   ariaNotifyNoProducts() {
     const $noProductsMessage = $('[data-no-products-notification]');
     if ($noProductsMessage.length) {
-      $noProductsMessage.focus();
+      $noProductsMessage.trigger('focus');
     }
   }
 
@@ -97,7 +97,6 @@ export default class Category extends CatalogPage {
     const requestOptions = {
       config: {
         category: {
-          shop_by_price: true,
           products: {
             limit: productsPerPage,
           },

@@ -1,6 +1,6 @@
 {
   "name": "Cornerstone",
-  "version": "6.13.0",
+  "version": "6.14.0",
   "template_engine": "handlebars_v4",
   "meta": {
     "price": 0,
@@ -20,7 +20,6 @@
       "product_comparison_table",
       "complex_search_filtering",
       "customizable_product_selector",
-      "cart_suggested_products",
       "free_customer_support",
       "free_theme_upgrades",
       "high_res_product_images",
@@ -44,6 +43,30 @@
     "Firefox ESR"
   ],
   "settings": {
+    "channels": [
+      {
+        "id": 1,
+        "name": "Light",
+        "code": "Light",
+        "is_active": true,
+        "switch_url": "https://cornerstone-light-demo.mybigcommerce.com"
+      },
+      {
+        "id": 2,
+        "name": "Bold",
+        "code": "Bold",
+        "is_active": false,
+        "switch_url": "https://cornerstone-bold-demo.mybigcommerce.com"
+      },
+      {
+        "id": 3,
+        "name": "Warm",
+        "code": "Warm",
+        "is_active": false,
+        "switch_url": "https://cornerstone-warm-demo.mybigcommerce.com"
+      }
+    ],
+    "show_channels": false,
     "hide_breadcrumbs": false,
     "hide_page_heading": false,
     "hide_category_page_heading": false,
@@ -103,7 +126,7 @@
     "default_image_brand": "img/BrandDefault.gif",
     "default_image_product": "img/ProductDefault.gif",
     "default_image_gift_certificate": "img/GiftCertificate.png",
-    "body-font": "Google_Karla_400",
+    "body-font": "Google_Karla_400,400i,700,700i",
     "headings-font": "Google_Montserrat_400",
     "fontSize-root": 14,
     "fontSize-h1": 28,

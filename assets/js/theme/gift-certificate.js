@@ -208,7 +208,7 @@ export default class GiftCertificate extends PageManager {
       });
     };
 
-    $('#gift-certificate-preview').click((event) => {
+    $('#gift-certificate-preview').on('click', (event) => {
       event.preventDefault();
 
       purchaseValidator.performCheck();

@@ -1,6 +1,6 @@
-import Url from 'url';
 import PageManager from './page-manager';
 import urlUtils from './common/utils/url-utils';
+import Url from 'url';
 
 export default class CatalogPage extends PageManager {
   constructor(context) {
@@ -17,7 +17,7 @@ export default class CatalogPage extends PageManager {
     const $sortBySelector = $('[data-sort-by="product"] #sort');
 
     if (window.localStorage.getItem('sortByStatus')) {
-      $sortBySelector.focus();
+      $sortBySelector.trigger('focus');
       window.localStorage.removeItem('sortByStatus');
     }
   }

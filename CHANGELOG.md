@@ -7,6 +7,35 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## Draft
 
+- High severity security issue [#2477](https://github.com/bigcommerce/cornerstone/pull/2477)
+- Date Field Modifier - February showing 30th and 31st [#2473](https://github.com/bigcommerce/cornerstone/pull/2473)
+- Adding mobile nav dropdown focusTrap [#2465](https://github.com/bigcommerce/cornerstone/pull/2465)
+- Remove remote_api_scripts to avoid double firing Meta Pixel analytics [#2467](https://github.com/bigcommerce/cornerstone/pull/2467)
+- Prevent flow outside page container on account pages [#2462](https://github.com/bigcommerce/cornerstone/pull/2462)
+- Account.js - Fixed jquery selector to be template literal [#2464](https://github.com/bigcommerce/cornerstone/pull/2464)
+- Address deprecated jQuery methods [#2466](https://github.com/bigcommerce/cornerstone/pull/2466)
+- Load other font weights and styles for the body-font [#2396](https://github.com/bigcommerce/cornerstone/pull/2396)
+
+## 6.14.0 (05-15-2024)
+
+- Account.php <a href> is inside of a list item [#2457](https://github.com/bigcommerce/cornerstone/pull/2457)
+- Screen Reader only text must be provided [#2454](https://github.com/bigcommerce/cornerstone/pull/2454)
+- Remove "cookie notification" JS and CSS [#2447](https://github.com/bigcommerce/cornerstone/pull/2447)
+- Storefront nav for switching between country-specific websites (step 1) [#2453](https://github.com/bigcommerce/cornerstone/pull/2453)
+- ADA Compliance - Accordion buttons are not read by screen reader correctly [#2441](https://github.com/bigcommerce/cornerstone/pull/2441)
+- ADA Compliance - Region requires additional ARIA markup to assist screen reader users [#2435](https://github.com/bigcommerce/cornerstone/pull/2435)
+- ADA Compliance - Add translations to accessibility attributes for Coupon Code and Gift Certificates [#2440](https://github.com/bigcommerce/cornerstone/pull/2440)
+- ADA Compliance - The Add to Cart modal dialog container is not labeled [#2427](https://github.com/bigcommerce/cornerstone/pull/2427)
+- ADA Compliance - Decorative SVG elements should be hidden from screen reader users [#2432](https://github.com/bigcommerce/cornerstone/pull/2432)
+- ADA Compliance - Content that functions as a list should be indicated as such to screen reader users [#2429](https://github.com/bigcommerce/cornerstone/pull/2429)
+- ADA Compliance - All form fields must be properly labeled [#2433](https://github.com/bigcommerce/cornerstone/pull/2433)
+- ADA Compliance - Errors are not identified to screen reader users within the Refine By accordions [#2424](https://github.com/bigcommerce/cornerstone/pull/2424)
+- ADA Compliance - Expandable items should be read by screen reader [2422](https://github.com/bigcommerce/cornerstone/pull/2422)
+- Page Suggested Items still listed on Cornerstone [#2438](https://github.com/bigcommerce/cornerstone/pull/2438)
+- Remove shop_by_price: true from category.html [#2431](https://github.com/bigcommerce/cornerstone/pull/2431)
+- Added SEPA and ECP stored bank accounts typesto the Payment methods page [#2434](https://github.com/bigcommerce/cornerstone/pull/2434)
+- Added min-height for vaulted payment methods [#2455](https://github.com/bigcommerce/cornerstone/pull/2455)
+
 ## 6.13.0 (02-12-2024)
 
 - Fix HTML markup for product listing and below content region [#2426](https://github.com/bigcommerce/cornerstone/pull/2426)

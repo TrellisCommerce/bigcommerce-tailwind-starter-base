@@ -272,17 +272,18 @@ export default class Cart extends PageManager {
     });
 
     // cart qty manually updates
-    $('.cart-item-qty-input', this.$cartContent)
-      .on('focus', function onQtyFocus() {
+    $('.cart-item-qty-input', this.$cartContent).on({
+      focus: function onQtyFocus() {
         preVal = this.value;
-      })
-      .change((event) => {
+      },
+      change: (event) => {
         const $target = $(event.currentTarget);
         event.preventDefault();
 
         // update cart quantity
         cartUpdateQtyTextChange($target, preVal);
-      });
+      },
+    });
 
     $('.cart-remove', this.$cartContent).on('click', (event) => {
       const itemId = $(event.currentTarget).data('cartItemid');

@@ -8,7 +8,7 @@ const setCheckedRadioItem = (itemCollection, itemIdx) => {
       return;
     }
 
-    $item.attr('aria-checked', true).prop('checked', true).focus();
+    $item.attr('aria-checked', true).prop('checked', true).trigger('focus');
     $item.trigger('change');
   });
 };
@@ -41,7 +41,7 @@ const handleItemKeyDown = (itemCollection) => (e) => {
         lastCollectionItemIdx,
         itemIdx - 1,
       );
-      itemCollection.get(prevItemIdx).focus();
+      itemCollection.get(prevItemIdx).trigger('focus');
       setCheckedRadioItem(itemCollection, itemIdx - 1);
       break;
     }
@@ -51,7 +51,7 @@ const handleItemKeyDown = (itemCollection) => (e) => {
         lastCollectionItemIdx,
         itemIdx + 1,
       );
-      itemCollection.get(nextItemIdx).focus();
+      itemCollection.get(nextItemIdx).trigger('focus');
       setCheckedRadioItem(itemCollection, itemIdx + 1);
       break;
     }
