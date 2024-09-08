@@ -1,5 +1,7 @@
 Brought to you and maintained by [Trellis Commerce](https://trellis.co/) - A full-service eCommerce agency based in Boston, MA
 
+Latest merged code from [Cornerstone v6.14.0](https://github.com/bigcommerce/cornerstone/releases/tag/6.14.0)
+
 # Cornerstone + Tailwind CSS + Prettier BigCommerce Starter Theme
 
 BigCommerce Cornerstone theme with Tailwind CSS &amp; Prettier integrations
